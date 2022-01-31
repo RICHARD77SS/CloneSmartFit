@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('http://fonts.cdnfonts.com/css/gotham-black?styles=15539');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+:root {
+    --roboto: 'Roboto', sans-serif;
+    --gotham: 'Gotham Black', sans-serif;
+    --black: 'Black Han Sans', sans-serif;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #202020;
+}
+.nav {
+    width: 100vw;
+    height: 98px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menu {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.link {
+    color: #fff;
+    list-style: none;
+    font-weight: bold;
+    margin-left: 15px;
+    font-family: var(--roboto);
+    font-size: 14px;
+}
+.menu_icon {
+    
+    width: 30px;
+    height: 30px;
+    margin-left: 30px;
+    background-color: transparent;
+    border: none;
+}
+.menu_icon div:nth-child(-n+1) {
+    border-radius: 50px;
+}
+.menu_icon div:nth-child(5) {
+    border-radius: 50px;
+}
+.menu_icon div {
+    width: 24px;
+    height: 2px;
+    margin-top: 2px;
+    margin-bottom: 4px;
+    background-color: #fff;
+}
+hr {
+    border: none;
+}
+.logo {
+    width: 150px;
+    height: 60px;
+    margin-left: 19px;
+}
+.home {
+    width: 100vw;
+    height: 600px;
+    background-size: cover;
+}
+.bg {
+    width: 100%;
+    height: 100%;
+}
+.planos {
+    width: 100vw;
+    height: 1090px;
+    background: #202020;
+    padding-top: 40px;
+    align-items: center;
+    align-content: center;
+}
+.desc_plano {
+    margin: auto;
+    max-width: 80%;
+    height: 155px;
+    text-align: center;
+    align-items: center;
+}
+.h2-black {
+    font-size: 2.7em;
+    font-weight: 700;
+    font-family: var(--gotham);
+    color: #ffb612;
+}
+.h2-smart {
+    font-size: 2.7em;
+    font-weight: 700;
+    font-family: var(--gotham);
+    color:#212529
+}
+span {
+    color: #fff;
+}
+ .dec{
+
+    font-size: 1.3em;
+    font-family: var(--gotham);
+    color: #fff;
+}
+
+.hr {
+    padding-top: 2rem;
+}
+
+
+
+.cards--conteiner {
+    width: 700px;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_plano {
+    width: 300px;
+    height: 795.17px;
+    background-color: #fff;
+}
+
+.pp {
+    font-size: .9em;
+    margin-left: 9px;
+    color:#fff;
+    font-family: var(--gotham);
+}
+
+.card-1-tagv {
+    width: 140px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    background-color: #d52b1e;
+    position: absolute;
+    margin-left: 170px;
+    margin-top: -15px;
+}
+.card-1-top {
+    width: 300px;
+    height: 116px;
+    background-color: #000;
+    text-align: center;
+    align-content: center;
+}
+.card-1-preço {
+    background-color: #ffb612;
+    margin: auto;
+    width: 230px;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+}
+.card-2-top {
+    width: 300px;
+    height: 116px;
+    background-color: #ffb612;
+    text-align: center;
+    align-content: center;
+}
+.card-2-preço {
+    background-color: #000000;
+    color: #ffb612;
+    margin: auto;
+    width: 230px;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+}
+.p {
+    padding-top: 20px;
+    font-size: 19px;
+    font-weight: 600;
+    font-family: var(--gotham);
+    color: #fff;
+}
+.spn {
+    font-family: var(--gotham);
+    font-weight: 600;
+    padding-top: 10px;
+    font-size: 1rem;
+}
+.h3 {
+    font-size: 2.3rem;
+    font-family: var(--gotham);
+}
+
+li {
+    list-style: none;
+    text-align: center;
+    margin: 20px 0;
+    font-family: var(--gotham);
+}
+.li-1 {
+    font-size: 1.2em;
+    color: #212529
+}
+.li-d {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 600;
+}
+.li-2 {
+    color: #212529;
+    font-size: 1em;
+    font-weight: 600;
+}
+.button {
+    width: 200px;
+    height: 60px;
+    font-size: 1.1rem;
+    background-color: #d52b1E;
+    border: none;
+    color: #fff;
+    bottom: 0px;
+}
+#btn1 {
+    padding-top: 2rem;
+}
+#btn2 {
+    padding-top: 10rem;
+}
+.card--desc {
+    margin: auto;
+    width: 260px;
+    margin-top: 5rem;
+}
+.hr-card {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.app {
+    width: 100%;
+    height: 900px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+}
+.conteiner-app-desc {
+    width: 35%;
+    height: auto;
+    text-align: left;
+    margin-top: 6rem;
+}
+
+.h2-app-desc {
+    font-size: 2.1rem;
+    line-height: 2.3rem;
+    font-family: var(--gotham);
+    font-weight: 800;
+}
+
+.conteiner-app-desc p {
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: var(--gotham);
+
+}
+
+.div-links-app {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.link-app {
+    display: grid;
+    margin-left:  1rem;
+    margin-top: 3px;
+}
+
+h5 {
+    margin-top: 3rem;
+    font-family: var(--gotham);
+    font-weight: 800;
+}
+.appstore {
+    margin-top: 1rem;
+
+}
+
+.covid {
+
+}
+.ecosistema {
+
+}
+.receba-email {
+
+}
+.footer {
+
+}
