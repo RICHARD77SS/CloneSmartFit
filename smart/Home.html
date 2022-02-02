@@ -10,7 +10,7 @@
 <body>
     <nav class="nav">
         <div>
-            <img class="logo" href="#home" src="imagens/SmartFitLogo.svg">
+            <a href="#home"><img class="logo" src="imagens/SmartFitLogo.svg"></a>
         </div>
         <ul class="menu">
             <li class="link">ACADEMIAS</li>
@@ -18,13 +18,13 @@
             <li class="link">SMART FIT NEWS</li>
             <li class="link">AGENDE SEU HORARIO</li>
             <li class="link">SMART FIT SUPPS</li>
-            <button class="menu_icon">
-                <div></div>
-                <hr class="hr-menu">
-                <div></div>
-                <hr class="hr-menu">
-                <div></div>
-            </button>
+            <btn class="menu_icon">
+                <svg viewBox="0 0 60 60" width="30" height="30">
+                    <rect width="80" height="14"></rect>
+                    <rect y="20" width="100" height="14"></rect>
+                    <rect y="40"  width="100" height="14"></rect>
+                </svg>
+            </btn>
         </ul>
        
 
@@ -34,7 +34,7 @@
     </main>
     <section class="planos">
         <section class="desc_plano">
-            <h2><span>Escolha</span> seu plano</h2>
+            <h2 class="h2-pl">Escolha <span class="cov">seu plano</span></h2>
             <hr class="hr">
             <p class="dec">Treine o quanto quiser com nossos planos. Todos oferecem áreas de musculação, aeróbico, aulas especiais e de ginástica.</p>
         </section>
@@ -112,24 +112,190 @@
         </div>
     </section>
     <section class="cards__services--conteiner">
-        <div class="card__services"></div>
-        <div class="card__services"></div>
-        <div class="card__services"></div>
-        <div class="card__services"></div>
+        <div class="card__services--scroll">
+            <div class="card__services">
+                <a><img class="img-card" width="490" height="430" src="imagens/Cards/nutricao-card.jpg"></a>
+                <div class="preco__card">
+                    <p><b>+ 12x R$ 29,90</b><br>7 dias de garantia</p>
+                </div>
+                <div class="texto__card">
+                    <h2>Smart Fit Nutri</h2>
+                    <p>Tenha consultas online com nutricionistas para mudar sua alimentação de um jeito simples e saudável.</p>
+                    <button class="btn__cards">Baixar Agora</button>
+                </div>
+            </div>
+            <div class="card__services">
+                <a><img class="img-card" width="490" height="430" src="imagens/Cards/Coach-card.jpg"></a>
+                <div class="preco__card">
+                    <p><b>+R$ 49,90</b><br>*Permanência: 3<br>meses</p>
+                </div>
+                <div class="texto__card">
+                    <h2>Smart Fit Coach</h2>
+                    <p>Tenha mais motivação e ajuste sua rotina com um professor sempre por perto</p>
+                    <button class="btn__cards">Agendar atendimento</button>
+                </div>
+            </div>
+            <div class="card__services">
+                <a><img class="img-card" width="490" height="430" src="imagens/Cards/Suplemento-card.png"></a>
+                <div class="preco__card">
+                    <p><b></b></p>
+                </div>
+                <div class="texto__card">
+                    <h2>Smart Fit Supps</h2>
+                    <p>A suplementação inteligente que<br> te ajuda a potencializar seus<br> resultados.</p>
+                    <button class="btn__cards">Conheca os produtos</button>
+                </div>
+                
+            </div>
+            <div class="card__services">
+                <a><img class="img-card" width="490" height="430" src="imagens/Cards/Treino-em -casa-Card.jpg"></a>
+                <div class="preco__card">
+                    <p>Exclusivo para<br> clientes</p>
+                </div>
+                <div class="texto__card">
+                    <h2>Smart Fit Go</h2>
+                    <p>O melhor da sua academia na sua<br> casa! Aproveite suas aulas online<br> onde e quando quiser.</p>
+                    <button class="btn__cards">Inscrever-se</button>
+                </div>
+            </div>
+        </div>
 
     </section>
-    
-    <section class="covid">
 
+    <section class="covid">
+        <h2 class="h2-covid">Vamos vecer<span class="cov"> A COVID-19</span></h2>
+        <h3 class="h3-covid">Precisamos da sua ajuda. Só assim, vamos conseguir deixar a Smart Fit um lugar mais seguro para todos.</h3>
+        <h2 class="h2-covid">Mudanças importantes</h2>
+        <div class="covid-conteiner">
+            <div class="card__covid"><h2>Desinfecção completa</h2><img src="imagens/imgCovid/icon-desinfeccao.png"/><p>Desinfectamos todas<br> as academias com<br> <b>aparelho nebulizador</b><br> de 2 a 3 vezes por dia</p>
+            </div>
+            <div class="card__covid"><h2>Distância entre aparelhos</h2><img src="imagens/imgCovid/icon-distancia.png"/><p>Desativamos metade<br> dos aparelhos de<br> cardio para manter<br> uma <b>distância segura</b><br>entre os clientes</p></div>
+            <div class="card__covid"><h2>Agende seu<br> horário</h2><img src="imagens/imgCovid/icon-agende.png"/><p>Vamos evitar<br> aglomeração. Antes de ir<br> à academia <a><b>agende<br> seu horário aqui</b></a></p>
+            </div>
+            <div class="card__covid"><h2>Termômetro <br>digital</h2><img src="imagens/imgCovid/icon-termometro.png"/><p>Vamos medir sua<br> temperatura na<br> recepção. Se estiver<br> <b>acima de 37.8ºC</b> vote<br> para casa por favor</p></div>
+            <div class="card__covid"><h2>Uso de<br> máscaras</h2><img src="imagens/imgCovid/icon-usaremos-mascara.png"/><p>A máscara é<br> obrigatória. <b>Toda nossa<br> equipe</b>usará máscaras<br> assim como os <b>aluno</b></p>
+            </div>
+            <div class="card__covid"><h2>Tapetes de higienização</h2><img src="imagens/imgCovid/icon-tapetes.png"/><p>Temos tapetes na<br> entrada para você<b><br>higienizar seu tênis</b></p>
+            </div>
+        </div>
+        <button class="btn__covid">SAIBA MAIS</button>
     </section>
     <section class="ecosistema">
-
+        <h2 class="h2-covid">Tudo o que você <span class="cov">precisa</span></h2>
+        <h class="h3-covid">Um ecossistema fitness que oferece mais liberdade na hora de treinar.</h>
+        <div class="ecossistema__conteiner">
+            <div class="ecossistemas__content">
+                <img class="img-ecossistema" src="imagens/ImgServicos/img_cover_academia_aulas.jpg"/>
+                <p class="desc__area">Aulas de ginástica + FIT DANCE</p>
+            </div>
+            <div class="ecossistemas__content">
+                <img class="img-ecossistema" src="imagens/ImgServicos/img_cover_academia_musculacao.jpg"/>
+                <p class="desc__area">Musculação</p>
+            </div>
+            <div class="ecossistemas__content">
+                <img class="img-ecossistema" src="imagens/ImgServicos/img_cover_academia_funcional.jpg"/>
+                <p class="desc__area">Funcional</p>
+            </div>
+            <div class="ecossistemas__content">
+                <img class="img-ecossistema" src="imagens/ImgServicos/img_cover_academia_cardio.jpg"/>
+                <p class="desc__area">Cardio</p>
+            </div>
+            <div class="ecossistemas__content">
+                <img class="img-ecossistema" src="imagens/ImgServicos/img_cover_academia_fitness-remote.jpg"/>
+                <p class="desc__area">Treinos para fazer onde quiser</p>
+            </div>
+            <div class="ecossistemas__content">
+                <img class="img-ecossistema" src="imagens/ImgServicos/img_cover_academia_fitness-app.jpg"/>
+                <p class="desc__area">Tudo na palma da mão</p>
+            </div>
+        </div>
     </section>
     <section class="receba-email">
-
+        <h3>Receba novidades e promoções exclusivas da Smart Fit.</h3>
+        <input type="email" placeholder=" Informe aqui o seu e-mail" class="input-email"/>
+        <button class="button-cadastrar-email">CADASTRAR</button>
     </section>
     <footer class="footer">
-
+        <img class="img_footer" class="logo" href="#home" src="imagens/SmartFitLogo.svg">
+        <hr>
+        <section class="info__content">
+            <ul>
+                <li>INSTITUCIONAL</li>
+                <li>Sobre</li>
+                <li>Conceito</li>
+                <li>Investidores</li>
+                <li>Central de Ajuda</li>
+                <li>Fale Conosco</li>
+                <li>Edital Smart Fit</li>
+                <li>Portak de Privacidade</li>
+                <li>Canal Pandemia</li>
+            </ul>
+            <ul>
+                <li>PLANOS</li>
+                <li>Planos</li>
+                <li>Contatos</li>
+                <li>Planos corporativos</li>
+                <li>Smart Fit Supps</li>
+                <li>Smart Fit Plus</li>
+            </ul>
+            <ul>
+                <li>CORPORATIVO</li>
+                <li>Imprensa</li>
+                <li>Quero ser um franqueado</li>
+                <li>Divulgue sua marca</li>
+                <li>Indique um ponto</li>
+                <li>Trabalhe Conosco</li>
+                <li>Graduação Ed Fisica EAD</li>
+            </ul>
+            <ul>
+                <li>SIGA A SMART FIT</li>
+                <li>Facebool</li>
+                <li>Instagram</li>
+                <li>YouTube</li>
+                <li>TikTok</li>
+                <li>Spotify</li>
+                <li>Twitter</li>
+                <li>Smart Fit News</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <pre>
+                INFORMAÇÕES E CONDIÇÕES
+                
+                
+                - O preço da mensalidade não inclui taxas de adesão e manutenção anual. Pagamento mensal por débito automático em
+                conta-corrente ou cartão de crédito. O preço mínimo pode variar entre os planos e as unidades. Consulte a relação de
+                unidades em smartfit.com.br. Sujeito a alterações sem aviso prévio. Não aceitamos cheques. Pagamento em dinheiro deve
+                ser feito à vista, direto na unidade, incluindo mensalidade do período de 12 meses, taxas de adesão e manutenções anuais
+                vigentes. Imagens meramente ilustrativas.
+                
+                - Condições promocionais não são válidas para pagamentos à vista.
+                
+                - O Plano Black garante acesso ilimitado para todas as unidades da América Latina.
+                
+                - O Plano Black garante acesso limitado de 5 convidados por mês em qualquer unidade da rede.
+                
+                
+                * FEVEREIRO 2022 - 1º mês grátis no plano Black: Em razão da promoção você não paga taxa de adesão e nem a primeira
+                mensalidade do seu plano Black, passando a pagar o valor integral a partir da segunda mensalidade em diante. Condição
+                válida apenas para novas vendas que fizerem adesão do plano Black no período de 01/02/2022 a 07/02/2022. As demais
+                cobranças previstas em contrato (manutenção anual e antecedência de cancelamento, multa, etc.) serão integralmente
+                mantidas. Promoção não cumulativa e vinculada a permanência mínima de três meses. Caso haja cancelamento durante o
+                período de permanência mínima o valor do benefício será cobrado juntamente com quaisquer outros valores devidos no
+                momento do cancelamento. Não é válido para clientes com débito anterior em aberto ou que tiveram seu plano cancelado por
+                violação das normas de utilização. Necessário utilização de código promocional. Consulte unidades não participantes aqui
+                
+                * FEVEREIRO 2022 - 10 Reais de desconto nos planos Smart/Black por 12 meses: Em razão da promoção você terá desconto de
+                R$10,00 nas doze primeiras mensalidades do seu plano Smart ou Black e taxa de adesão zero. Válido apenas para compras
+                realizadas no período de 01/02/2022 à 07/02/2022. As demais cobranças previstas em contrato (manutenção anual e
+                antecedência de cancelamento, multa, etc.) serão integralmente mantidas. Promoção não cumulativa e vinculada a
+                permanência mínima de três meses. Caso haja cancelamento durante o período de permanência mínima o valor do benefício
+                será cobrado juntamente com quaisquer outros valores devidos no momento do cancelamento. Não é válido para clientes com
+                débito anterior em aberto ou que tiveram seu plano cancelado por violação das normas de utilização. Necessário a
+                utilização de código promocional. Consulte unidades não participantes aqui
+            </pre>
+        </section>
     </footer>
 
 </body>
