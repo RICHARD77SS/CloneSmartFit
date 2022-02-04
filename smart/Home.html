@@ -8,29 +8,43 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="nav">
+    <header class="header">
         <div>
             <a href="#home"><img class="logo" src="imagens/SmartFitLogo.svg"></a>
         </div>
-        <ul class="menu">
-            <li class="link">ACADEMIAS</li>
-            <li class="link">ESPAÇO DO CLIENTE</li>
-            <li class="link">SMART FIT NEWS</li>
-            <li class="link">AGENDE SEU HORARIO</li>
-            <li class="link">SMART FIT SUPPS</li>
-            <btn class="menu_icon">
-                <svg viewBox="0 0 60 60" width="30" height="30">
-                    <rect width="80" height="14"></rect>
-                    <rect y="20" width="100" height="14"></rect>
-                    <rect y="40"  width="100" height="14"></rect>
-                </svg>
-            </btn>
-        </ul>
-       
-
-    </nav>
+        <nav id="nav" class="nav">
+            <ul class="menu">
+                <li class="link"><a>ACADEMIAS</a></li>
+                <li class="link"><a>ESPAÇO DO CLIENTE</a></li>
+                <li class="link"><a>SMART FIT NEWS</a></li>
+                <li class="link"><a>AGENDE SEU HORARIO</a></li>
+                <li class="link"><a>SMART FIT SUPPS</a></li>
+                <button class="btn__menu" onClick="onClickMenu()" id="btnMobile"><p>X</p>
+                    <div class="dash"></div>
+                    <div class="dash"></div>
+                    <div class="dash"></div>
+                </button>
+            </ul>
+        </nav>
+        
+        <div id="menu" class="menu__content">
+            <a href="#home"><img class="logo" src="imagens/logo-grey.svg"></a>
+            <ul class="menu2">
+                <li class="link"><a>Home</a></li>
+                <li class="link"><a>Academias</a></li>
+                <li class="link"><a>Smart Fit News</a></li>
+                <li class="link"><a>Agende seu horário</a></li>
+                <li class="link"><a>Planos</a></li>
+                <li class="link"><a>Conceito Snart Fit</a></li>
+                <li class="link"><a>Espaço do cliente</a></li>
+                <li class="link"><a>Samat Fit Supps</a></li>
+                <li class="link"><a>Imprensa</a></li>
+                <li class="link"><a>Dúvidas Frequentes</a></li>
+            </ul>
+        </div>
+    </header>
     <main id="home" class="home">
-            <img class="bg" src="imagens/Banner.jpg" width="768" height="380" alt="banner">
+            <img class="bg" src="imagens/Banner3.jpg" width="768" height="380" alt="banner">
     </main>
     <section class="planos">
         <section class="desc_plano">
@@ -43,7 +57,10 @@
         <section class="cards--conteiner">
             <div class="card_plano">
                 <div class="card-1-top">
-                    <div class="card-1-tagv" ><p class="pp">O mais <b>vantajoso</b></p></div>
+                    <div class="card-1-tagv" >
+                        <p class="pp">O mais <b>vantajoso</b></p>
+                        <div class="trianglinho"></div>
+                    </div>
                     <p class="p">PLANO</p>
                     <h2 class="h2-black">BLACK</h2>
                     <div class="card-1-preço">
@@ -64,7 +81,9 @@
                     <li class="li-2">Leve amigos para treinar com você</li>
                     <li class="li-2">Cadeira de massagem</li>
                     <li class="li-2">1 mês para presentear alguém</li>
-                    <li id="btn1"><button class="button 1" ><b>APROVEITE</b></button></li>
+                    <li class="btn1">
+                        <button class="button" >APROVEITE</button>
+                    </li>
                 </ul>
             </div>
             <hr>
@@ -87,7 +106,9 @@
                     <li class="li-2">Área de musculaçao e aeróbicos</li>
                     <li class="li-2">Smart Fit Go</li>
                     <li class="li-2">Sem taxa de cancelamento</li>
-                    <li id="btn2"><button class="button" ><b>APROVEITE</b></button></li>
+                    <li class="btn2">
+                        <button class="button">APROVEITE</button>
+                    </li>
                 </ul>
                 
         </section>
@@ -100,7 +121,7 @@
             grátis o Smart Fit App, você ganha o melhor aliado para a sua rotina de treinos! Exclusivo para clientes.</p>
             <h5>Escaneie o código para baixar grátis</h5>
             <div class="div-links-app">
-                <a><img src="imagens/qrcode.png"></a>
+                <a href="#home"><img src="imagens/qrcode.png"></a>
                 <div class="link-app">
                     <a><img src="imagens/google-play-badge.webp"></a>
                     <a><img  class="appstore" src="imagens/apple-badge.webp"></a>
@@ -161,7 +182,6 @@
         </div>
 
     </section>
-
     <section class="covid">
         <h2 class="h2-covid">Vamos vecer<span class="cov"> A COVID-19</span></h2>
         <h3 class="h3-covid">Precisamos da sua ajuda. Só assim, vamos conseguir deixar a Smart Fit um lugar mais seguro para todos.</h3>
@@ -170,7 +190,7 @@
             <div class="card__covid"><h2>Desinfecção completa</h2><img src="imagens/imgCovid/icon-desinfeccao.png"/><p>Desinfectamos todas<br> as academias com<br> <b>aparelho nebulizador</b><br> de 2 a 3 vezes por dia</p>
             </div>
             <div class="card__covid"><h2>Distância entre aparelhos</h2><img src="imagens/imgCovid/icon-distancia.png"/><p>Desativamos metade<br> dos aparelhos de<br> cardio para manter<br> uma <b>distância segura</b><br>entre os clientes</p></div>
-            <div class="card__covid"><h2>Agende seu<br> horário</h2><img src="imagens/imgCovid/icon-agende.png"/><p>Vamos evitar<br> aglomeração. Antes de ir<br> à academia <a><b>agende<br> seu horário aqui</b></a></p>
+            <div class="card__covid"><h2>Agende seu<br> horário</h2><img src="imagens/imgCovid/icon-agende.png"/><p>Vamos evitar<br> aglomeração. Antes de ir<br> à academia <a class="agende" href="agende_horario"><b>agende<br> seu horário aqui</b></a></p>
             </div>
             <div class="card__covid"><h2>Termômetro <br>digital</h2><img src="imagens/imgCovid/icon-termometro.png"/><p>Vamos medir sua<br> temperatura na<br> recepção. Se estiver<br> <b>acima de 37.8ºC</b> vote<br> para casa por favor</p></div>
             <div class="card__covid"><h2>Uso de<br> máscaras</h2><img src="imagens/imgCovid/icon-usaremos-mascara.png"/><p>A máscara é<br> obrigatória. <b>Toda nossa<br> equipe</b>usará máscaras<br> assim como os <b>aluno</b></p>
@@ -216,8 +236,11 @@
         <button class="button-cadastrar-email">CADASTRAR</button>
     </section>
     <footer class="footer">
-        <img class="img_footer" class="logo" href="#home" src="imagens/SmartFitLogo.svg">
-        <hr>
+        <div>
+            <a href="#home"><img class="img_footer" class="logo" href="#home" src="imagens/logo-slogan.svg"></a>
+        </div>
+            
+        <hr class="hr__footer">
         <section class="info__content">
             <ul>
                 <li>INSTITUCIONAL</li>
@@ -249,7 +272,7 @@
             </ul>
             <ul>
                 <li>SIGA A SMART FIT</li>
-                <li>Facebool</li>
+                <li>Facebook</li>
                 <li>Instagram</li>
                 <li>YouTube</li>
                 <li>TikTok</li>
@@ -258,8 +281,8 @@
                 <li>Smart Fit News</li>
             </ul>
         </section>
-        <hr>
-        <section>
+        <hr class="hr__footer">
+        <section class="footer__u">
             <pre>
                 INFORMAÇÕES E CONDIÇÕES
                 
@@ -297,6 +320,6 @@
             </pre>
         </section>
     </footer>
-
+    <script src="Scripts/Script.js" defer></script>
 </body>
 </html>
