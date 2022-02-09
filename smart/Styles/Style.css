@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('http://fonts.cdnfonts.com/css/gotham-black?styles=15539');
@@ -46,6 +47,18 @@ body {
     margin-right: 10px;
     margin-left: 20%;
 }
+.menu li a {
+    color: #f4f4f4;
+}
+.menu li a:visited {
+    color: #f4f4f4;
+}
+.menu li a:active {
+    color: #f4f4f4;
+}
+.menu li a:hover {
+    color: #ffb612;
+}
 
 .menu__content {
     display: none;
@@ -75,6 +88,7 @@ body {
     font-weight: 100;
     font-family: var(--roboto);
     text-align: left;
+
 }
 .menu2 li a:hover {
     color: #ffb612;
@@ -655,6 +669,9 @@ h5 {
     margin-left: auto;
     margin-right: auto;
     display: flex;
+}
+.smart-links img{
+    width: 16px;
 }
 .img_footer {
     padding: 2rem;
