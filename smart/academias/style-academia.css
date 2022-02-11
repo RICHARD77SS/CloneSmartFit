@@ -241,6 +241,7 @@ body {
     color: #f4f4f4;
 }
 .menu__diferenciais {
+    display: none;
     width: 78%;
     margin-left: auto;
     margin-right: auto;
@@ -284,8 +285,8 @@ body {
     white-space: nowrap;
     font-family: var(--gotham);
     font-weight: 600;
-    color: #ff0000;
-    border-color: #ff0000;
+    color: #dc0a17;
+    border-color: #dc0a17;
     background-color: transparent;
     margin: 5px;
     padding: .6rem;
@@ -347,24 +348,33 @@ body {
     width: 100vw;
     height: auto;
     background-color: #f4f4f4;
+
 }
 .academias__conteiner {
     width: 65%;
     height: auto;
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     margin-left: auto;
     margin-right: auto;
+    transform: translateY(-4rem);
 }
 .academia__content {
     width: 300px;
-    height: 500px;
-    background-color: #ccc;
+    height: 420px;
+    background-color: transparent;
+    margin: 10px;
+}
+.academia__foto {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
 }
 .foto__header {
     width: 90%;
     height: 0px;
-    transform: translateY(2.5rem);
+    transform: translateY(1.5rem);
     background-color: transparent;
     margin-left: auto;
     margin-right: auto;
@@ -373,7 +383,7 @@ body {
     justify-content: space-between;
 }
 .foto__header p {
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: 600;
     font-family: var(--gotham);
     color: #f4f4f4;
@@ -390,15 +400,15 @@ body {
 .foto__header button:hover {
     color: #ffb612;
 }
-.augusta {
+.local {
     height: 0;
     background-color: #f4f4f4;
 }
-.augusta p {
+.local p {
     color: #f4f4f4;
     font-size: 1.5rem;
     font-family: var(--gotham);
-    transform: translateY(4rem);
+    transform: translateY(2rem);
     margin: .3rem;
 }
 .academia__foto {
@@ -411,13 +421,109 @@ body {
     width: 100%;
 } 
 .academia__preço {
+    width: 300px;
+    height: 77px;
+    display: flex;
+    align-content: center;
+    background-color:rgba(0, 0, 0, 0.5);
+    transform: translateY(-5rem);
+}
+.plano__smart {
+    width: 100px;
+    height: 30px;
+    margin-left: 2rem;
+    margin-right: 3rem;
+    text-align: center;
+}
+.academia__preço h6 {
+    font-family: var(--black);
+    font-size: .7rem;
+    font-weight: 700;
+    color: #f4f4f4;
+    transform: translateY(10px);
+}
+.academia__preço p {
+    width: 100px;
+    font-family: var(--black);
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f4f4f4;
+    transform: translateY(15px)
+}
+.hr__preço {
+    transform: translateX(-2rem);
+    height: 50px;
+    margin-top: 10px;
+}
+.plano__black {
+    transform: translateX(-1rem);
+}
+.academia__dados {
+    width: 300px;
+    height: 163px;
+    background-color: #ffffff;
+    display: block;
+}
+.academia__dados p {
+    transform: translateY(2rem);
+    font-size: .8rem;
+    font-family: var(--black);
+    margin-left: 1rem;
+    color: #808080
+}
+.btn__academia-comece {
+    width: 280px;
+    height: 49px;
+    font-family: var(--black);
+    color: #f4f4f4;
+    background-color: #dc0a17;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: none;
+    transform: translateY(1.5rem);
 
 }
+.btn__mais-detalhes {
+    width: 105px;
+    height: 28px;
+    font-size: 0.6rem;
+    transform: translateY(-2.2rem);
+    margin-left: 6rem;
+    background-color: #ffffff;
+    border: 0.5px solid #ccc;
+    border-radius: 2px;
+}
+.menu__diferenciais.change {
+    display: block;
+}
 
+.academia__preço h5 {
+    margin-left: 10px;
+    font-size: .8rem;
+    transform: translateY(1rem);
+    color: #f4f4f4;
+}
+.hr__preco {
+    position: absolute;
+    margin-top: 1.4rem;
+    margin-left: 27px;
+    width: 55px;
+    border-color: #dc0a17;
+    transform: rotate(-10deg);
 
-
-
-
+}
+.hr__preco2 {
+    position: absolute;
+    margin-top: 1.4rem;
+    margin-left: 10px;
+    width: 55px;
+    border-color: #dc0a17;
+    transform: rotate(-8deg);
+}
+.carregarmais {
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 

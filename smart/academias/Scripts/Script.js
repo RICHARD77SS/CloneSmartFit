@@ -1,7 +1,5 @@
 
 //Adiciona a class "change" aos elementos
 function onClickMenu() {
-    document.getElementById("menu").classList.toggle("change");
-    document.getElementById("nav").classList.toggle("change");
-    document.getElementById("btnMobile").classList.toggle("change")
+    document.getElementById("menuDif").classList.toggle("change");
 }
