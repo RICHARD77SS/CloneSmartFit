@@ -1,0 +1,243 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('http://fonts.cdnfonts.com/css/gotham-black?styles=15539');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+:root {
+    --roboto: 'Roboto', sans-serif;
+    --gotham: 'Gotham Black', sans-serif;
+    --black: 'Black Han Sans', sans-serif;
+}
+body {
+    background-color: #f4f4f4;
+}
+.header {
+    width: 100%;
+    height: 130px;
+    
+}
+.nav {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+}
+.nav img {
+    width: 145px;
+    margin-left: 64%;
+    cursor: pointer;
+}
+.menu {
+    width: 35%;
+    display: flex;
+}
+.menu span{
+    font-weight: 700;
+    font-family: var(--gotham);
+    font-size: .9rem;
+    color: #f4f4f4;
+    margin: 10px;
+    cursor: pointer;
+}
+.menu span:hover {
+    color:#ffb612;
+    transition: .5s;
+}
+.sub__header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 120px;
+
+}
+.sub__header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.title {
+    position: absolute;
+    transform: translateX(6rem);
+    margin-bottom: .5rem;
+}
+.title p {
+    color: #f4f4f4;
+    font-family: var(--gotham);
+    font-size: 1rem;
+    font-weight: 700;
+
+}
+.title h1 {
+    color: #ffb612;
+    font-weight: 700;
+    font-family: var(--gotham);
+}
+.pais {
+    color: #f4f4f4;
+    font-family: var(--gotham);
+    position: absolute;
+    margin-left: 86%;
+}
+.pais p {
+    font-size: .8rem;
+}
+.pais span {
+    font-size: .8rem;
+    margin-left: 57px;
+    font-weight: 800;
+    color: #909090;
+    cursor: pointer;
+}
+.main__login {
+    width: 100%;
+    height: 900px;
+}
+.login__conteiner {
+    width: 480px;
+    height: 537px;
+    background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10rem;
+    margin-bottom: auto;
+    display: block;
+    
+
+}
+.form__fieldset {
+    width: 272px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6rem;
+    border: none;
+    display: grid;
+    margin-top: 2rem;
+}
+.btn__entrar {
+    width: 272px;
+    height: 64px;
+    margin: 1rem 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffb612;
+    cursor: pointer;
+}
+.btn__entrar:hover {
+    background-color: rgb(194, 140, 3);
+    transition: .4s;
+}
+.btn__facesso {
+    width: 272px;
+    height: 64px;
+    margin: 1rem 0;
+    border-radius: 4px;
+    border: 2px solid #000;
+    background-color: #fff;
+    cursor: pointer;
+
+}
+.btn__facesso:hover {
+    background-color: #000;
+    color: #f4f4f4;
+    transition: .4s;
+}
+.label {
+    font-family: var(--black);
+    margin: .4rem 0;
+    font-size: .7rem;
+    font-weight: 700;
+
+}
+.input {
+    width: 272px;
+    height: 46px;
+    margin: 1rem 0;
+    border: 2px solid #ececec;
+}
+.form__fieldset a {
+    text-decoration: underline;
+    color: rgb(26, 91, 175);
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+.form__fieldset a:hover {
+    color:rgb(57, 142, 253);
+}
+
+.form__fieldset h2 {
+    width: 330px;
+    transform: translateX(-1.5rem);
+    position: absolute;
+    margin-top: -4rem;
+    font-weight: 400;
+    font-family: var(--gotham);
+
+}
+
+
+
+
+
+
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #202020;
+    color: #bbb;
+    font-family: var(--roboto);
+    padding-bottom: 4rem;
+}
+.footer div {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.smart-links img{
+    width: 16px;
+}
+.smart-links a {
+    color: #f4f4f4
+}
+.img_footer {
+    padding: 2rem;
+    width: 250px;
+}
+.footer ul {
+    width: 300px;
+    height: auto;
+    color: #fff;
+}
+.footer li {
+    margin: 1rem;
+}
+.info__content {
+    padding-top: 1rem;
+    width: auto;
+    display: flex;
+    margin-left: 12%;
+}
+.hr__footer {
+    border: 1px solid rgba(255,255,255,0.2);
+    width: 1050px;
+    margin: auto;
+}
+.footer__u {
+    text-align: left;
+    padding-top: 1rem;
+}
+.footer__u p {
+    margin: 2rem;
+    font-size: 0.7rem;
+    }
+.hr__footer2 {
+    display: none;
+}
