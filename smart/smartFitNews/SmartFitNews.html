@@ -32,39 +32,73 @@
     </header>
     <main>
         <div class="bannerRotativo__conteiner">
-            <div class="banner">
-                <img src="/smart/imagens/Banners/SmartFitNews/Estudo-relaciona-atividade-fisica-a-longevidade-de-pessoas-com-Parkinson-3.webp" alt="">
-                <img src="/smart/imagens/Banners/SmartFitNews/Passo-a-passo-do-HIIT-o-que-e-beneficios-e-por-que-ele-e-aliado-do-emagrecimento-3.webp" alt="">
-                <img src="/smart/imagens/Banners/SmartFitNews/Por-que-trabalhar-os-musculos-faz-bem-para-a-saude-3.webp" alt="">
+            <div id="slider" class="banner">
+                <img class="imgRot selected" src="/smart/imagens/Banners/SmartFitNews/Estudo-relaciona-atividade-fisica-a-longevidade-de-pessoas-com-Parkinson-3.webp" alt="">
+                <img class="imgRot"  src="/smart/imagens/Banners/SmartFitNews/Passo-a-passo-do-HIIT-o-que-e-beneficios-e-por-que-ele-e-aliado-do-emagrecimento-3.webp" alt="">
+                <img class="imgRot"  src="/smart/imagens/Banners/SmartFitNews/Por-que-trabalhar-os-musculos-faz-bem-para-a-saude-3.webp" alt="">
             </div>
-            <button></button>
-            <button></button>
+            <div class="banner__button--arrow">
+                <button class="l"></button>
+                <button class="r"></button>
+            </div>
         </div>
-        <div class="buttons__banner">
+        <div class="banner__button--circle">
             <button></button>
             <button></button>
             <button></button>
         </div>
     </main>
     <div class="news__conteiner">
-        <h2>MAIS LIDAS</h2>
+        <div class="newsText__conteiner">
+            <span></span>
+            <h2>MAIS LIDAS</h2>
+            <span></span>
+        </div>
         <div class="news__content">
-            <div class="news__cards">
-                <div class="card__top"><img src="/smart/imagens/Cards/CardsSmartFitNews/Tudo-o-que-voce-precisa-saber-sobre-prancha-abdominal-2.webp"></div>
-                <div class="card__middle"><img src="/smart/imagens/icons/SmartFitNewsIcons/FitnessIcon.svg"></div>
-                <div class="card__bottom"><h3>Tudo o que você precisa saber sobre prancha-abdominal</h3>
-                <p>Aprenda o passo a passo de como fazer uma prancha perfeita!</p></div>
+
+            <div class="number__card">
+1
             </div>
             <div class="news__cards">
-                <div class="card__top"><h3>A atividade física interfere na imunidade ?</h3>
-                <p>Evidências apontam que sim! Os exercícios também estariam associados ao aumento da potência da Imunidade</p></div>
-                <div class="card__middle"><img src="/smart/imagens/icons/SmartFitNewsIcons/saudeIcon.svg"></div>
-                <div class="card__bottom"><img src="/smart/imagens/Cards/CardsSmartFitNews/atividade-fisica-interfere-na-imunidade-2.webp"></div>
+                <div class="card__img">
+                    <img class="img" src="/smart/imagens/Cards/CardsSmartFitNews/Tudo-o-que-voce-precisa-saber-sobre-prancha-abdominal-2.webp">
+                </div>
+                <div class="card__icon a1">
+                    <img class="icon" src="/smart/imagens/icons/SmartFitNewsIcons/FitnessIcon.svg">
+                </div>
+                <div class="card__text a1">
+                    <h3>Tudo o que você precisa saber sobre prancha-abdominal</h3>
+                    <p>Aprenda o passo a passo de como fazer uma prancha perfeita!</p>
+                </div>
+            </div>
+
+            <div class="number__card">
+2
             </div>
             <div class="news__cards">
-                <div class="card__top"><img src="/smart/imagens/Cards/CardsSmartFitNews/Refrigerante-natural-caseiro-a-receita-perfeita-para-o-calor-2.webp"></div>
-                <div class="card__middle"><img src="/smart/imagens/icons/SmartFitNewsIcons/nutriçaoIcon.svg"></div>
-                <div class="card__bottom">
+                <div class="card__text a2">
+                    <h3>A atividade física interfere na imunidade ?</h3>
+                    <p>Evidências apontam que sim! Os exercícios também estariam associados ao aumento da potência da Imunidade</p>
+                </div>
+                <div class="card__icon a2">
+                    <img class="icon" src="/smart/imagens/icons/SmartFitNewsIcons/saudeIcon.svg">
+                </div>
+                <div class="card__img">
+                    <img class="img" src="/smart/imagens/Cards/CardsSmartFitNews/atividade-fisica-interfere-na-imunidade-2.webp">
+                </div>
+            </div>
+
+            <div class="number__card">
+3
+            </div>
+            <div class="news__cards">
+                <div class="card__img">
+                    <img class="img" src="/smart/imagens/Cards/CardsSmartFitNews/Refrigerante-natural-caseiro-a-receita-perfeita-para-o-calor-2.webp">
+                </div>
+                <div class="card__icon a3">
+                    <img class="icon" src="/smart/imagens/icons/SmartFitNewsIcons/nutriçaoIcon.svg">
+                </div>
+                <div class="card__text a3">
                     <h3>Refrigerante natural caseiro: a receita perfeita para o calor!</h3>
                     <p>Refrigerante saudável existe! Prepare essa receitinha deliciosa para saborear nos dias quentes</p>
                 </div>
@@ -76,7 +110,10 @@
             <img src="/smart/imagens/Banners/Banner2SmartFit_Promo.webp" alt="Banner de promoção smart fit">
         </div>
         <div class="redes__conteiner">
-            <h3>SIDA A SMART NAS REDES</h3>
+            <h3>SIGA A SMART NAS REDES</h3>
+            <div class="number__redes">
+                1
+            </div>
             <div class="mediaIcons__conteiner">
                 <button><img src="" alt=""></button>
                 <button><img src="" alt=""></button>
@@ -88,9 +125,16 @@
     </div>
     <section class="recentesNews">
         <section class="recente__content">
-            <h3>RECENTES</h3>
-            <div class="recentes__conteinr">
-                <div class="conteiner__fitness"><img src="/smart/imagens/icons/SmartFitNewsIcons/FitnessIcon.svg">FITNESS</div>
+            <div class="newsText__conteiner">
+                <span></span>
+                <h3 class="h3recentes">RECENTES</h3>
+                <span></span>
+            </div>
+            <div class="recentes__conteiner">
+                <div class="conteiner__fitness a">
+                    <img src="/smart/imagens/icons/SmartFitNewsIcons/FitnessIcon.svg">
+                    <h3>FITNESS</h3>
+                </div>
                 <div class="fitness__content">
                     <img src="/smart/imagens/Cards/CardsSmartFitNews/Tudo-o-que-voce-precisa-saber-sobre-prancha-abdominal-2.webp" alt="">
                     <div class="fitness__description">
@@ -106,8 +150,11 @@
                     </div>
                 </div>
             </div>
-            <div class="recentes__conteinr">
-                <div class="conteiner__fitness"><img src="/smart/imagens/icons/SmartFitNewsIcons/nutriçaoIcon.svg">NUTRIÇÃO</div>
+            <div class="recentes__conteiner">
+                <div class="conteiner__fitness b">
+                    <img src="/smart/imagens/icons/SmartFitNewsIcons/nutriçaoIcon.svg">
+                    <h3>NUTRIÇÃO</h3>
+                </div>
                 <div class="fitness__content">
                     <img src="/smart/imagens/Cards/CardsSmartFitNews/Refrigerante-natural-caseiro-a-receita-perfeita-para-o-calor-2.webp" alt="">
                     <div class="fitness__description">
@@ -124,7 +171,10 @@
                 </div>
             </div>
             <div class="recentes__conteinr">
-                <div class="conteiner__fitness"><img src="/smart/imagens/icons/SmartFitNewsIcons/saudeIcon.svg">SAÚDE</div>
+                <div class="conteiner__fitness c">
+                    <img src="/smart/imagens/icons/SmartFitNewsIcons/saudeIcon.svg">
+                    <h3>SAÚDE</h3>
+                </div>
                 <div class="fitness__content">
                     <img src="/smart/imagens/Cards/CardsSmartFitNews/Estudo-relaciona-atividade-fisica-a-longevidade-de-pessoas-com-Parkinson-1-260x177.webp" alt="">
                     <div class="fitness__description">
@@ -149,18 +199,18 @@
                 <input type="email" id="email" class="input__email">
                 <p>Sobre o que você quer ler?</p>
                 <div class="sobre__conteiner">
-                    <label for="academia">Academia</label>
-                    <input type="checkbox" class="input__checkbox" id="academia">
-                    <label for="fitness">Fitness</label>
-                    <input type="checkbox" class="input__checkbox" id="fitness">
-                    <label for="Saude">Saúde</label>
-                    <input type="checkbox" class="input__checkbox" id="Saude">
-                    <label for="nutriçao">Nutrição</label>
-                    <input type="checkbox" class="input__checkbox" id="nutriçao">
+                    <input type="checkbox" class="input__checkbox" id="academia" checked>
+                    <label class="sobre__label" for="academia">Academia</label>
+                    <input type="checkbox" class="input__checkbox" id="fitness" checked>
+                    <label class="sobre__label" for="fitness">Fitness</label>
+                    <input type="checkbox" class="input__checkbox" id="Saude" checked>
+                    <label class="sobre__label" for="Saude">Saúde</label>
+                    <input type="checkbox" class="input__checkbox" id="nutriçao" checked>
+                    <label class="sobre__label" for="nutriçao">Nutrição</label>
                 </div>
                 <button class="btn__euquero">Eu quero!</button>
-                <label for="termosDeUso">Ao aceitar o recebimento das novidades voçê automaticamente aceita os Termos de Uso</label>
-                <input type="checkbox" id="termosDeUso">
+                <input class="input__termos" type="checkbox" id="termosDeUso" checked>
+                <label class="termos" for="termosDeUso">Ao aceitar o recebimento das<br> novidades voçê automaticamente<br> aceita os  <span>Termos de Uso</span></label>
             </div>
             <div class="banner3__conteiner">
                 <a href=" "><img src="/smart/imagens/Banners/banner3.webp" alt=""></a>
@@ -173,16 +223,23 @@
     <div class="banner5">
         <a href=""><img src="/smart/imagens/Banners/Banner2SmartFit_Promo.webp" alt=""></a>
     </div>
+        <h3 class="h3__siga">SIGA A SMART NO INSTA</h3>
     <div class="siga__conteiner">
         <a href=""><img src="/smart/imagens/Banners/manha.webp" alt=""></a>
         <a href=""><img src="/smart/imagens/Banners/travesseiro.webp" alt=""></a>
         <a href=""><img src="/smart/imagens/Banners/motivo.webp" alt=""></a>
         <a href=""><img src="/smart/imagens/Banners/botao.webp" alt=""></a>
     </div>
-    <footer>
-        <div class="footer__logo--conteiner"><a href=""><img src="" alt=""></a></div>
-        <div class="footer__direitos--conteiner"><h5>Smart Fit © 2022 - Todos os direitos reservados.</h5></div>
-        <div class="footer__meidas--conteiner">
+    <footer class="footer">
+        <div class="footer__logo--conteiner">
+            <a href="">
+                <img src="/smart/imagens/LogosSmartFit/SmartFitLogo.svg" alt="">
+            </a>
+        </div>
+        <div class="footer__direitos--conteiner">
+            <h5>Smart Fit © 2022 - Todos os direitos reservados.</h5>
+        </div>
+        <div class="footer__medias--conteiner">
             <button><img src="" alt=""></button>
             <button><img src="" alt=""></button>
             <button><img src="" alt=""></button>
@@ -191,5 +248,6 @@
             
         </div>
     </footer>
+    <script src="ScriptSmartFitNews.js"></script>
 </body>
 </html>
