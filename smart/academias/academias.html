@@ -9,18 +9,17 @@
 </head>
 <body>
     <header id="academias" class="header">
-        <div>
-            <a href="#home"><img class="logo" src="imagens/SmartFitLogo.svg"></a>
+        <div class="logoc">
+            <a href="/smart/Home.html"><img class="logo" src="imagens/SmartFitLogo.svg"></a>
         </div>
         <nav id="nav" class="nav">
             <ul class="menu">
-                <li class="link"><a>ACADEMIAS</a></li>
-                <li class="link"><a>ESPAÇO DO CLIENTE</a></li>
-                <li class="link"><a>SMART FIT NEWS</a></li>
-                <li class="link"><a>AGENDE SEU HORARIO</a></li>
-                <li class="link"><a>SMART FIT SUPPS</a></li>
-                <button class="btn__menu" onClick="onClickMenu()" id="btnMobile">
-                    <p>X</p>
+                <li class="link"><a href="academias/academias.html">ACADEMIAS</a></li>
+                <li class="link"><a href="/smart/login/login.html">ESPAÇO DO CLIENTE</a></li>
+                <li class="link"><a href="smartFitNews/SmartFitNews.html">SMART FIT NEWS</a></li>
+                <li class="link"><a href="AgendeSeuHorario/AgendeSeuHorario.html">AGENDE SEU HORARIO</a></li>
+                <li class="link"><a href="SmartFitSupps/SmartFitSupps.html">SMART FIT SUPPS</a></li>
+                <button class="btn__menu" onClick="onClickMenu2()" id="btnMobile">
                     <div class="dash"></div>
                     <div class="dash"></div>
                     <div class="dash"></div>
@@ -28,17 +27,16 @@
             </ul>
         </nav>
         <div id="menu" class="menu__content">
-    
-            <a href="#home"><img class="logo" src="imagens/logo-grey.svg"></a>
             <ul class="menu2">
-                <li class="link"><a>Home</a></li>
-                <li class="link"><a>Academias</a></li>
-                <li class="link"><a>Smart Fit News</a></li>
-                <li class="link"><a>Agende seu horário</a></li>
+                <button class="btn__fechar" onclick="onClickMenu2()">X</button>
+                <li class="link"><a href="/smart/Home.html">Home</a></li>
+                <li class="link"><a href="academias/academias.html">Academias</a></li>
+                <li class="link"><a href="smartFitNews/SmartFitNews.html">Smart Fit News</a></li>
+                <li class="link"><a href="AgendeSeuHorario/AgendeSeuHorario.html">Agende seu horário</a></li>
                 <li class="link"><a>Planos</a></li>
                 <li class="link"><a>Conceito Smart Fit</a></li>
-                <li class="link"><a>Espaço do cliente<img src="imagens/cadiado.svg"></a></li>
-                <li class="link"><a>Samat Fit Supps</a></li>
+                <li class="link"><a href="login/login.html">Espaço do cliente</a><img class="cadiado" src="imagens/cadiado.svg"></li>
+                <li class="link"><a href="SmartFitSupps/SmartFitSupps.html">Samat Fit Supps</a></li>
                 <li class="link"><a>Imprensa</a></li>
                 <li class="link duvidas">
                     <a id="duvida">
@@ -54,7 +52,7 @@
             <label>BUSCAR POR: <span>ENDEREÇO</span></label>
             <div class="content__pesquisa">
                 <input type="text" placeholder="   Digite aqui o CEP, bairro ou cidade" class="input__buscar-endereço"/>
-                <button class="btn__pesquisar">o</button>
+                <button class="btn__pesquisar"><img src="/smart/imagens/icons/SmartFitNewsIcons/lupinha-01-1.png"></button>
                 <button onclick="onClickMenu()" class="btn__diferenciais">...</button>
             </div>
             <div id="menuDif"  class="menu__diferenciais">
@@ -117,9 +115,28 @@
                         <p>Rua Augusta, 1585 - Consolação<br>
                         São Paulo, SP - 01305100</p>
                     </div>
-                    <button class="btn__mais-detalhes">MAIS DETALHES</button>
-                    <div class="academia__conteiner-mais-detalhes">
-        
+                    <button class="btn__mais-detalhes" onclick="onClickMais()">MAIS DETALHES</button>
+                    <div id="ca" class="academia__conteiner-mais-detalhes">
+                        <h6>DIFERENCIAIS</h6>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <hr>
+                        <h6>HORÁRIOS</h6>
+                        <span>DOM/<br>FERIADOS</span>
+                        <p>= 8H - 14H</p>
+                        <span>SEG</span>
+                        <p>= 6H - 23H</p>
+                        <span>TER</span>
+                        <p>= 8H - 23H</p>
+                        <span>QUA</span>
+                        <p>= 6H - 23H</p>
+                        <span>QUI</span>
+                        <p>= 8H - 23H</p>
+                        <span>SEX</span>
+                        <p>= 6H - 23H</p>
+                        <span>SAB</span>
+                        <p>= 6H - 23H</p>
                     </div>
                 </div>
                 <div class="academia__content">
@@ -149,9 +166,28 @@
                         <p>Rua da Consolação, 3080 - Consolação<br>
                         São Paulo, SP - 1416000</p>
                     </div>
-                    <button class="btn__mais-detalhes">MAIS DETALHES</button>
-                    <div class="academia__conteiner-mais-detalhes">
-        
+                    <button class="btn__mais-detalhes" onclick="onClickMaisb()" >MAIS DETALHES</button>
+                    <div id="cb" class="academia__conteiner-mais-detalhes">
+                        <h6>DIFERENCIAIS</h6>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <hr>
+                        <h6>HORÁRIOS</h6>
+                        <span>DOM/<br>FERIADOS</span>
+                        <p>= 8H - 14H</p>
+                        <span>SEG</span>
+                        <p>= 6H - 23H</p>
+                        <span>TER</span>
+                        <p>= 8H - 23H</p>
+                        <span>QUA</span>
+                        <p>= 6H - 23H</p>
+                        <span>QUI</span>
+                        <p>= 8H - 23H</p>
+                        <span>SEX</span>
+                        <p>= 6H - 23H</p>
+                        <span>SAB</span>
+                        <p>= 6H - 23H</p>
                     </div>
                 </div>
                 <div class="academia__content">
@@ -181,9 +217,27 @@
                         <p>Avenida Angélica, 2424 - Consolação<br>
                         São Paulo, SP - 01228200</p>
                     </div>
-                    <button class="btn__mais-detalhes">MAIS DETALHES</button>
-                    <div class="academia__conteiner-mais-detalhes">
-        
+                    <button class="btn__mais-detalhes" onClick="onClickMaisc()" >MAIS DETALHES</button>
+                    <div id="cc" class="academia__conteiner-mais-detalhes">
+                        <h6>DIFERENCIAIS</h6>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <hr>
+                        <h6>HORÁRIOS</h6>
+                        <span>DOM/<br>FERIADOS</span>
+                        <p>= 8H - 14H</p>
+                        <span>SEG</span>
+                        <p>= 6H - 23H</p><span>TER</span>
+                        <p>= 8H - 23H</p>
+                        <span>QUA</span>
+                        <p>= 6H - 23H</p>
+                        <span>QUI</span>
+                        <p>= 8H - 23H</p>
+                        <span>SEX</span>
+                        <p>= 6H - 23H</p>
+                        <span>SAB</span>
+                        <p>= 6H - 23H</p>
                     </div>
                 </div>
                 <div class="academia__content">
@@ -213,9 +267,28 @@
                         <p>Rua Augusta, 1053 - Consolação<br>
                         São Paulo, SP - 01305100</p>
                     </div>
-                    <button class="btn__mais-detalhes">MAIS DETALHES</button>
-                    <div class="academia__conteiner-mais-detalhes">
-        
+                    <button class="btn__mais-detalhes" onClick="onClickMaisd()">MAIS DETALHES</button>
+                    <div id="cd" class="academia__conteiner-mais-detalhes">
+                        <h6>DIFERENCIAIS</h6>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <hr>
+                        <h6>HORÁRIOS</h6>
+                        <span>DOM/<br>FERIADOS</span>
+                        <p>= 8H - 14H</p>
+                        <span>SEG</span>
+                        <p>= 6H - 23H</p>
+                        <span>TER</span>
+                        <p>= 8H - 23H</p>
+                        <span>QUA</span>
+                        <p>= 6H - 23H</p>
+                        <span>QUI</span>
+                        <p>= 8H - 23H</p>
+                        <span>SEX</span>
+                        <p>= 6H - 23H</p>
+                        <span>SAB</span>
+                        <p>= 6H - 23H</p>
                     </div>
                 </div>
                 <div class="academia__content">
@@ -245,9 +318,28 @@
                         <p>Rua Oscar Freire, 228 - Cerqueira César<br>
                         São Paulo, SP - 01426000</p>
                     </div>
-                    <button class="btn__mais-detalhes">MAIS DETALHES</button>
-                    <div class="academia__conteiner-mais-detalhes">
-        
+                    <button class="btn__mais-detalhes" onClick="onClickMaise()">MAIS DETALHES</button>
+                    <div id="ce" class="academia__conteiner-mais-detalhes">
+                        <h6>DIFERENCIAIS</h6>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <hr>
+                        <h6>HORÁRIOS</h6>
+                        <span>DOM/<br>FERIADOS</span>
+                        <p>= 8H - 14H</p>
+                        <span>SEG</span>
+                        <p>= 6H - 23H</p>
+                        <span>TER</span>
+                        <p>= 8H - 23H</p>
+                        <span>QUA</span>
+                        <p>= 6H - 23H</p>
+                        <span>QUI</span>
+                        <p>= 8H - 23H</p>
+                        <span>SEX</span>
+                        <p>= 6H - 23H</p>
+                        <span>SAB</span>
+                        <p>= 6H - 23H</p>
                     </div>
                 </div>
                 <div class="academia__content">
@@ -277,9 +369,28 @@
                         <p>Alameda Santos, 1347 - Cerqueira César<br>
                         São Paulo, SP - 01419001</p>
                     </div>
-                    <button class="btn__mais-detalhes">MAIS DETALHES</button>
-                    <div class="academia__conteiner-mais-detalhes">
-        
+                    <button class="btn__mais-detalhes" onClick="onClickMaisf()">MAIS DETALHES</button>
+                    <div id="cf" class="academia__conteiner-mais-detalhes">
+                        <h6>DIFERENCIAIS</h6>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <hr>
+                        <h6>HORÁRIOS</h6>
+                        <span>DOM/<br>FERIADOS</span>
+                        <p>= 8H - 14H</p>
+                        <span>SEG</span>
+                        <p>= 6H - 23H</p>
+                        <span>TER</span>
+                        <p>= 8H - 23H</p>
+                        <span>QUA</span>
+                        <p>= 6H - 23H</p>
+                        <span>QUI</span>
+                        <p>= 8H - 23H</p>
+                        <span>SEX</span>
+                        <p>= 6H - 23H</p>
+                        <span>SAB</span>
+                        <p>= 6H - 23H</p>
                     </div>
                 </div>
                 <div class="academia__content">
@@ -313,14 +424,34 @@
                         <p>Avenida Paulista, 807 - Bela Vista<br>
                         São Paulo, SP - 01311100</p>
                     </div>
-                    <button class="btn__mais-detalhes">MAIS DETALHES</button>
-                    <div class="academia__conteiner-mais-detalhes">
+                    <button class="btn__mais-detalhes" onClick="onClickMaisg()">MAIS DETALHES</button>
+                    <div id="cg" class="academia__conteiner-mais-detalhes">
+                        <h6>DIFERENCIAIS</h6>
+                        <div>
+                            <img src="" alt="">
+                        </div>
+                        <hr>
+                        <h6>HORÁRIOS</h6>
+                        <span>DOM/<br>FERIADOS</span>
+                        <p> 8H - 14H</p>
+                        <span>SEG</span>
+                        <p> 6H - 23H</p>
+                        <span>TER</span>
+                        <p> 8H - 23H</p>
+                        <span>QUA</span>
+                        <p> 6H - 23H</p>
+                        <span>QUI</span>
+                        <p> 8H - 23H</p>
+                        <span>SEX</span>
+                        <p> 6H - 23H</p>
+                        <span>SAB</span>
+                        <p> 6H - 23H</p>
                     </div>
                 </div>
             </div>
             <div class="carregarmais">
                 <a  href="#">Carregar mais</a></div>
-        </div>
+            </div>
     <section class="receba-email">
         <h3>Receba novidades e promoções exclusivas da Smart Fit.</h3>
         <input type="email" placeholder=" Informe aqui o seu e-mail" class="input-email" />
