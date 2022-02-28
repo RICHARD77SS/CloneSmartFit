@@ -393,10 +393,11 @@ li {
     justify-content: space-around;
 }
 .conteiner-app-desc {
-    width: 43%;
+    width: 37%;
     height: auto;
     text-align: left;
     margin-top: 4rem;
+    margin-left: 5%;
 }
 .h2-app-desc {
     font-size: 2.1rem;
@@ -413,7 +414,11 @@ li {
 .conteiner-app-img {
     width: 50%;
 }
+.conteiner-app-img img {
+    margin-left: 15%;
+}
 .div-links-app {
+    width: 50%;
     display: flex;
     margin-top: 1rem;
 }
@@ -446,7 +451,7 @@ h5 {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
-    overflow-x: hidden;
+    
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
 }
@@ -454,7 +459,7 @@ h5 {
     width: 280px;
     height: 420px;
     border-radius: 20px;
-    margin: 14px;
+    margin: 1%;
     align-content: center;
     flex: none;
     scroll-snap-align: start;
