@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--gotham);
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('http://fonts.cdnfonts.com/css/gotham-black?styles=15539');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+:root {
+    --roboto: 'Roboto', sans-serif;
+    --gotham: 'Gotham Black', sans-serif;
+    --black: 'Black Han Sans', sans-serif;
+}
+.nav__conteiner {
+    width: 100%;
+    height: 115px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo__conteiner {
+    width: 40%;
+    height: auto;
+}
+.logo__conteiner img {
+    width: 325px;
+    height: auto;
+    margin: 0 2.5rem;
+}
+.menu__conteiner {
+    width: 60%;
+    height: auto;
+}
+.menu__conteiner ul {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.menu__conteiner a {
+    color: #f4f4f4;
+    font-size: 1rem;
+    font-family: var(--gotham);
+    font-weight: 700;
+    margin: 1rem;
+}
+a.aamarelo {
+    color:#ffc222;
+}
+.menu__conteiner input {
+    width: 200px;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    font-family: var(--roboto);
+}
+.menu__conteiner img {
+    transform: translateY(.6rem);
+    margin-left: 5px;
+}
+header {
+    width: 100%;
+    height: 65px;
+    box-shadow: 0 1px 4px rgba(0,0,0);
+}
+.header__conteiner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.header__conteiner button {
+    width: 25%;
+    border: none;
+    font-size: 1.5rem;
+    font-family: var(--gotham);
+    font-weight: 700;
+}
+.header__conteiner button:nth-child(1) {
+    background-color: #A9A9A9;
+}
+.header__conteiner button:nth-child(1):hover {
+    background-color: #ccc;
+}
+.header__conteiner button:nth-child(2) {
+    background-color: #ffc222;
+}
+.header__conteiner button:nth-child(2):hover {
+    background-color: #ffd34e;
+}
+.header__conteiner button:nth-child(3) {
+    background-color: #32CD32;
+}
+.header__conteiner button:nth-child(3):hover {
+    background-color: #8ee068;
+}
+.header__conteiner button:nth-child(4) {
+    background-color: #00a5e6;
+}
+.header__conteiner button:nth-child(4):hover {
+    background-color: #00BFFF;
+}
+.header__conteiner img {
+    width: 35px;
+    transform: translateY(2px);
+}
+.academia__conteiner {
+    width: 100%;
+    height: auto;
+}
+.academia__conteiner img {
+    width: 8%;
+    margin: 0 43.5%;
+}
+.academia__conteiner h1 {
+    font-size: 2.5rem;
+    margin: 0 43.5%;
+    color: #747171;
+}
+.academia__conteiner p {
+    width: 210px;
+    margin: 2rem 43.5%;
+}
+.banner__conteiner {
+    width: 100%;
+}
+.banner__content {
+    width: 80%;
+    margin: 1rem auto;
+}
+.banner__content img {
+    width: 100%;
+}
+.banner__content h3 {
+    font-size: 2rem;
+    color: #f4f4f4;
+    position: absolute;
+    transform: translateY(-6.5rem);
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+    padding: 2rem 14.2rem;
+}
+.news__conteiner {
+    width: 100%;
+}
+.news__content {
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    border: 4px solid #808080;
+    border-radius: 5px;
+    background-color: #808080;
+}
+.news__content.b {
+    background-color: #f4f4f4;
+}
+.news__img {
+    width: 337px;
+    margin: 10px 20px;
+
+}
+.news__img img {
+    width: 100%;
+}
+.news__text {
+    width: 75%;
+}
+.news__text h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+.h2w {
+    color: #f4f4f4;
+}
+.news__text p {
+    margin: 2rem 0;
+}
+.news__conteiner-2 {
+    width: 83%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.news__content-2 {
+    width: 348px;
+    margin: 20px 10px;
+    background-color: #808080;
+    border-radius: 10px;
+}
+.news__content-2.b {
+    background-color: #f4f4f4;
+}
+.news__img-2 {
+    width: 348px;
+    height: 250px;
+}
+.news__img-2.c {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.news__img-2.c img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.news__text-2.c {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.news__img-2.b {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.news__img-2.b img {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.news__text-2.b {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.news__img-2 img {
+    width: 100%;
+    height: 100%;
+}
+.news__icon {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    margin-left: 8.5rem;
+    background-color: #808080;
+    border-radius: 50px;
+    transform: translateY(-2rem);
+}
+.news__icon.u {
+    transform: translateY(-4.5rem);
+}
+.news__icon img {
+    margin-left: 12px;
+    margin-top: 15px;
+}
+.news__text-2 {
+    width: 348px;
+    height: 351px;
+    border: 4px solid #808080;
+
+}
+.news__text-2 h2 {
+    margin: 2rem 1rem;
+    text-align: center;
+}
+.news__text-2 p {
+    margin: 2rem 1rem;
+    text-align: center;
+}
+.pages__conteiner {
+    width: 100%;
+}
+.buttons {
+    width: 30%;
+    margin: 2rem auto;
+    display: flex;
+}
+.buttons button {
+    background-color: #000;
+    border: none;
+    padding: 1rem;
+    height: 50px;
+    border-radius: 5px;
+    margin: 10px;
+    color: #ffc222;
+}
+
+.footer {
+    width: 100%;
+    height:200px;
+    display: flex;
+    background-color: #000;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.footer__logo--conteiner {
+    width: 25%;
+    margin-left: 5%;
+}
+.footer__logo--conteiner img {
+    width: 240px;
+}
+
+.footer__direitos--conteiner {
+    width: 30%;
+}
+.footer__direitos--conteiner h5 {
+    color: #f4f4f4;
+    font-family: var(--gotham);
+    font-size: 1rem;
+}
+.footer__medias--conteiner {
+    width: 30%;
+}
+.footer__medias--conteiner button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #ffc222;
+    border: none;
+    margin: .5rem;
+}
