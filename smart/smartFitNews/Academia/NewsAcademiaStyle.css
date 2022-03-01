@@ -112,6 +112,9 @@ header {
     width: 35px;
     transform: translateY(2px);
 }
+.header__conteiner a {
+    color: #000;
+}
 .academia__conteiner {
     width: 100%;
     height: auto;
@@ -143,10 +146,12 @@ header {
     font-size: 2rem;
     color: #f4f4f4;
     position: absolute;
-    transform: translateY(-6.5rem);
+    transform: translateY(-4.5rem);
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
-    padding: 2rem 14.2rem;
+    width: 80%;
+    padding-bottom: 2rem;
+    text-align: center;
 }
 .news__conteiner {
     width: 100%;
@@ -191,7 +196,7 @@ header {
 }
 .news__content-2 {
     width: 348px;
-    margin: 20px 10px;
+    margin: 20px auto;
     background-color: #808080;
     border-radius: 10px;
 }
@@ -240,7 +245,7 @@ header {
     transform: translateY(-2rem);
 }
 .news__icon.u {
-    transform: translateY(-4.5rem);
+    transform: translateY(-1.6rem);
 }
 .news__icon img {
     margin-left: 12px;

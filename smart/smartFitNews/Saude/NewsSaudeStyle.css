@@ -112,6 +112,9 @@ header {
     width: 35px;
     transform: translateY(2px);
 }
+.header__conteiner a {
+    color: #000;
+}
 .academia__conteiner {
     width: 100%;
     height: auto;
@@ -123,7 +126,7 @@ header {
 .academia__conteiner h1 {
     font-size: 2.5rem;
     margin: 0 43.5%;
-    color: #747171;
+    color: #00a5e6;
 }
 .academia__conteiner p {
     width: 210px;
@@ -143,10 +146,12 @@ header {
     font-size: 2rem;
     color: #f4f4f4;
     position: absolute;
-    transform: translateY(-6.5rem);
+    transform: translateY(-4.5rem);
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
-    padding: 2rem 14.2rem;
+    width: 80%;
+    padding-bottom: 2rem;
+    text-align: center;
 }
 .news__conteiner {
     width: 100%;
@@ -155,9 +160,9 @@ header {
     width: 80%;
     margin: 10px auto;
     display: flex;
-    border: 4px solid #808080;
+    border: 4px solid #00a5e6;
     border-radius: 5px;
-    background-color: #808080;
+    background-color: #00a5e6;
 }
 .news__content.b {
     background-color: #f4f4f4;
@@ -191,8 +196,8 @@ header {
 }
 .news__content-2 {
     width: 348px;
-    margin: 20px 10px;
-    background-color: #808080;
+    margin: 20px auto;
+    background-color: #00a5e6;
     border-radius: 10px;
 }
 .news__content-2.b {
@@ -235,12 +240,12 @@ header {
     height: 60px;
     position: absolute;
     margin-left: 8.5rem;
-    background-color: #808080;
+    background-color: #00a5e6;
     border-radius: 50px;
     transform: translateY(-2rem);
 }
 .news__icon.u {
-    transform: translateY(-4.5rem);
+    transform: translateY(-2rem);
 }
 .news__icon img {
     margin-left: 12px;
@@ -249,7 +254,7 @@ header {
 .news__text-2 {
     width: 348px;
     height: 351px;
-    border: 4px solid #808080;
+    border: 4px solid #00a5e6;
 
 }
 .news__text-2 h2 {
