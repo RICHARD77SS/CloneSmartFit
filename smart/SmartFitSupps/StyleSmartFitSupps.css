@@ -40,10 +40,10 @@
 
 .header__conteiner {
     height: 60px;
-    background-color: rgba(0, 0, 0, 0.8);
-    top: 0;
-    position: fixed;
+    background-color: rgba(0, 0, 0);
     z-index: 999;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
 }
 .logo__conteiner {
     width: 25%;
@@ -119,16 +119,78 @@
     color: #f4f4f4;
 }
 .banner__conteiner {
-    width: 100%;
+ 
     height: auto;
     background-color: #000;
 }
-.banner {
-    width: 100%;
-
+.banner__conteiner {
+    height: 500px;
 }
-.banner img {
-    width: 100%;
+.esquerda {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    z-index: 10;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    color: #ccc;
+    opacity: .5;
+    padding: 1rem;
+}
+.esquerda:hover{
+    color: #000;
+    opacity: 1;
+    transition: .5s;
+}
+.direita {
+    top: 50%;
+    left: 96%;
+    z-index: 10;
+    font-size: 2rem;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    color: #ccc;
+    opacity: .5;
+    padding: 1rem
+}
+.direita:hover {
+    color: #000;
+    opacity: 1;
+    transition: .5s;
+}
+.slider {
+    display: flex;
+}
+.slide {
+    position: absolute;
+}
+.imagem {
+    width: 1342px;
+    height: 450px;
+    opacity: 0;
+    transition: all 1s;
+}
+.imagem.selected {
+    opacity: 1;
+    left: 0;
+    transition: all 3s;
+}
+.balls {
+    z-index: 10;
+    margin-top: 29rem;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.balls button {
+    padding: 0px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid #f4f4f4;
 }
 .promo__conteiner {
     width: 100%;
@@ -254,17 +316,28 @@
     width: 288px;
     margin-left: 1px;
     margin-right: 1px;
-    transition: all 2s;
+    opacity: 1;
+    transition: 1s;
 }
 .img.front:hover {
-    display: none;
-    transition: all 2s;
+    opacity: 0;
 
+
+}
+.img--f {
+    position: absolute;
+    z-index: 10;
+}
+.img--b {
+    position: absolute;
+    z-index: 0;
 }
 .img.back {
     width: 288px;
     height: 345px;
     position: absolute;
+    left: 0;
+
 }
 .produto__desc {
     width: 288px;
@@ -368,23 +441,30 @@
     transform: translateY(-4rem);
     padding-left: 6rem;
 }
-.text__conteiner {
+.conteudos__conteiner {
     width: 100%;
-    height: auto;
-    background-color: #000;
+    height: 440px;
+
+}
+.conteudos__conteiner img {
+    width: 100%;
+}
+.conteudos__conteiner {
     text-align: center;
 }
-.text__conteiner h2 {
+.conteudos__conteiner h2 {
     font-size: 2rem;
     font-family: var(--gotham);
     font-weight: 600;
     color: #f4f4f4;
+    transform: translateY(-19rem);
 }
-.text__conteiner p {
+.conteudos__conteiner p {
     font-size: 1rem;
     font-family: var(--gotham);
     font-weight: 500;
     color: #f4f4f4;
+    transform: translateY(-18rem);
 }
 .email__conteiner {
     width: 100%;
@@ -393,7 +473,7 @@
     padding-top: 2rem;
     padding-bottom: 2rem;
 }
-.email__conteiner input {
+.conteudos__conteiner input {
     font-size: 1rem;
     font-family: var(--gotham);
     font-weight: 600;
@@ -402,14 +482,15 @@
     height: 40px;
     border: none;
     background-color: rgb(51, 51, 51);
-    margin-left: 25%;
+    margin-left: 1%;
+    transform: translateY(-16rem);
 }
-.email__conteiner button {
+.conteudos__conteiner button {
     width: 100px;
     height: 40px;
     border: none;
     background-color: #ffb612;
-    margin-left: 10px;
+    transform: translateY(-16rem);
 }
 .footer__conteiner {
     width: 100%;

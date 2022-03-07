@@ -119,14 +119,20 @@ header {
     width: 100%;
     height: auto;
 }
+.academia__conteiner--img {
+    width: 5%;
+    margin: 1.8rem auto;
+    transform: translateX(1.7rem);
+
+}
 .academia__conteiner img {
-    width: 8%;
-    margin: 0 43.5%;
+    width: 100%;
+    margin: auto;
 }
 .academia__conteiner h1 {
     font-size: 2.5rem;
     margin: 0 43.5%;
-    color: #747171;
+    color: #A9A9A9;
 }
 .academia__conteiner p {
     width: 210px;
@@ -160,9 +166,9 @@ header {
     width: 80%;
     margin: 10px auto;
     display: flex;
-    border: 4px solid #808080;
+    border: 4px solid #A9A9A9;
     border-radius: 5px;
-    background-color: #808080;
+    background-color: #A9A9A9;
 }
 .news__content.b {
     background-color: #f4f4f4;
@@ -197,7 +203,7 @@ header {
 .news__content-2 {
     width: 348px;
     margin: 20px auto;
-    background-color: #808080;
+    background-color: #A9A9A9;
     border-radius: 10px;
 }
 .news__content-2.b {
@@ -240,7 +246,7 @@ header {
     height: 60px;
     position: absolute;
     margin-left: 8.5rem;
-    background-color: #808080;
+    background-color: #A9A9A9;
     border-radius: 50px;
     transform: translateY(-2rem);
 }
@@ -254,7 +260,7 @@ header {
 .news__text-2 {
     width: 348px;
     height: 351px;
-    border: 4px solid #808080;
+    border: 4px solid #A9A9A9;
 
 }
 .news__text-2 h2 {

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="StyleSmartFitSupps.css">
+    <link rel="stylesheet" href="	https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/fontawesome.css">
     <title>Document</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
             <button class="btn__pesquisa"><img src="/smart/imagens/icons/SmartFitNewsIcons/lupinha-01-1.png" alt=""></button>
         </div>
         <div class="login__conteiner">
-            <a href="entrar">ENTRAR </a><p >&#47; </p><a href="cadastre-se"> CADASTRE-SE</a><a href="carrinho"><img src="" alt="Carrinho"></a>
+            <a href="entrar">ENTRAR </a><p >&#47; </p><a href="cadastre-se"> CADASTRE-SE</a><i class="fad fa-shopping-cart"></i>
         </div>
     </header>
     <nav class="navbar">
@@ -36,10 +37,28 @@
         </div>
     </nav>
     <div class="banner__conteiner">
-        <div class="banner">
-            <a href=""><img src="/smart/imagens/banner_desktop.jpg" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
+            <div id="slider" class="slider">
+                <button class="esquerda"><</button>
+                <button class="direita">></button>
+                <div class="slide">
+                    <img class="imagem selected" src="/smart/imagens/SmartFitSupps/Banner-1-5.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imagem" src="/smart/imagens/SmartFitSupps/fabrica.webp" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imagem" src="/smart/imagens/SmartFitSupps/Banner-SP-1-1536x518.png" alt="">
+                </div>
+                <div class="slide">
+                    <img class="imagem" src="/smart/imagens/SmartFitSupps/Creapute_Desk.png" alt="">
+                </div>
+            </div>
+
+        <div class="balls">
+            <button class="1"></button>
+            <button class="2"></button>
+            <button class="3"></button>
+            <button class="4"></button>
         </div>
     </div>
     <div class="promo__conteiner">
@@ -76,10 +95,16 @@
     <div class="produtos__conteiner">
         <div class="produtos__cards">
             <div class="card">
+
                 <div class="produto__img">
-                    <img class="img front" src="/smart/imagens/ProdutosCard/BCAA-Laranja-1-247x296.webp" alt="" >
-                    <img class="img back" src="/smart/imagens/ProdutosCard/BCAA-2-247x296.webp" alt="bcaa">
+                    <div class="img--f">
+                        <img class="img front" src="/smart/imagens/ProdutosCard/BCAA-Laranja-1-247x296.webp" alt="">
+                    </div>
+                    <div class="img--b">
+                        <img class="img back" src="/smart/imagens/ProdutosCard/BCAA-2-247x296.webp" alt="bcaa">
+                    </div>
                 </div>
+
                 <div class="produto__desc">
                     <span>AMINOÁCIDOS</span>
                     <h5>BCAA 2:1:1 EM Pó 200g</h5>
@@ -91,8 +116,12 @@
             </div>
             <div class="card">
                 <div class="produto__img">
-                    <img class="img front" src="/smart/imagens/ProdutosCard/Creatine-247x296.webp" alt="" >
-                    <img class="img back" src="/smart/imagens/ProdutosCard/Creatina-e-Glutamina-247x296.webp" alt="">
+                    <div class="img--f">
+                        <img class="img front" src="/smart/imagens/ProdutosCard/Creatine-247x296.webp" alt="" >
+                    </div>
+                    <div class="img--b">
+                        <img class="img back" src="/smart/imagens/ProdutosCard/Creatina-e-Glutamina-247x296.webp" alt="">
+                    </div>
                 </div>
                 <div class="produto__desc">
                     <span>AMINOÁCIDOS</span>
@@ -105,8 +134,12 @@
             </div>
             <div class="card">
                 <div class="produto__img">
-                    <img class="img front" src="/smart/imagens/ProdutosCard/Glutamina-1-247x296.webp" alt="" >
-                    <img class="img back" src="/smart/imagens/ProdutosCard/Creatina-e-Glutamina-247x296.webp" alt="">
+                    <div class="img--f">
+                        <img class="img front" src="/smart/imagens/ProdutosCard/Glutamina-1-247x296.webp" alt="" >
+                    </div>
+                    <div class="img--b">
+                        <img class="img back" src="/smart/imagens/ProdutosCard/Creatina-e-Glutamina-247x296.webp" alt="">
+                    </div>
                 </div>
                 <div class="produto__desc">
                     <span>AMINOÁCIDOS</span>
@@ -119,8 +152,12 @@
             </div>
             <div class="card">
                 <div class="produto__img">
-                    <img class="img front" src="/smart/imagens/ProdutosCard/Wpi-Chocolate-1-247x296.webp" alt="" >
-                    <img class="img back" src="/smart/imagens/ProdutosCard/Whey-isolado-247x296.webp" alt="">
+                    <div class="img--f">
+                        <img class="img front" src="/smart/imagens/ProdutosCard/Wpi-Chocolate-1-247x296.webp" alt="" >
+                    </div>
+                    <div class="img--b">
+                        <img class="img back" src="/smart/imagens/ProdutosCard/Whey-isolado-247x296.webp" alt="">
+                    </div>
                 </div>
                 <div class="produto__desc">
                     <span>WHEY PROTEIN</span>
@@ -133,8 +170,12 @@
             </div>
             <div class="card">
                 <div class="produto__img">
-                    <img class="img front" src="/smart/imagens/ProdutosCard/Creapure_001-247x296.jpg" alt="" >
-                    <img class="img back" src="/smart/imagens/ProdutosCard/Creapure_003-247x296.jpg" alt="">
+                    <div class="img--f">
+                        <img class="img front" src="/smart/imagens/ProdutosCard/Creapure_001-247x296.jpg" alt="" >
+                    </div>
+                    <div class="img--b">
+                        <img class="img back" src="/smart/imagens/ProdutosCard/Creapure_003-247x296.jpg" alt="">
+                    </div>
                 </div>
                 <div class="produto__desc">
                     <span>AMINOÁCIDOS</span>
@@ -147,7 +188,12 @@
             </div>
             <div class="card">
                 <div class="produto__img">
-                    <img class="img front" src="/smart/imagens/ProdutosCard/barrachocolate-247x296.webp" alt="" >
+                    <div class="img--f">
+                        <img class="img front" src="/smart/imagens/ProdutosCard/barrachocolate-247x296.webp" alt="" >
+                    </div>
+                    <div class="img--b">
+                    
+                    </div>
                     <img class="img back" src="/smart/imagens/ProdutosCard/barras-247x296.webp" alt="">
                 </div>
                 <div class="produto__desc">
@@ -161,8 +207,12 @@
             </div>
             <div class="card">
                 <div class="produto__img">
-                    <img class="img front" src="/smart/imagens/ProdutosCard/Wpc-Chocolate-247x296.webp" alt="" >
-                    <img class="img back" src="/smart/imagens/ProdutosCard/Whey-3-247x296.webp" alt="">
+                    <div class="img--f">
+                        <img class="img front" src="/smart/imagens/ProdutosCard/Wpc-Chocolate-247x296.webp" alt="" >
+                    </div>
+                    <div class="img--b">
+                        <img class="img back" src="/smart/imagens/ProdutosCard/Whey-3-247x296.webp" alt="">
+                    </div>
                 </div>
                 <div class="produto__desc">
                     <span>WHEY PROTEIN</span>
@@ -175,8 +225,12 @@
             </div>
             <div class="card">
                 <div class="produto__img">
-                    <img class="img front" src="/smart/imagens/ProdutosCard/PreTreino-1-247x296.webp" alt="" >
-                    <img class="img back" src="/smart/imagens/ProdutosCard/Pre-Treino-1-247x296.webp" alt="">
+                    <div class="img--f">
+                        <img class="img front" src="/smart/imagens/ProdutosCard/PreTreino-1-247x296.webp" alt="" >
+                    </div>
+                    <div class="img--b">
+                        <img class="img back" src="/smart/imagens/ProdutosCard/Pre-Treino-1-247x296.webp" alt="">
+                    </div>
                 </div>
                 <div class="produto__desc ">
                     <span>PRÉ-TREINO</span>
@@ -233,15 +287,9 @@
     </div>
     
     <div class="conteudos__conteiner">
-        <img src="" alt="">
-    </div>
-
-    <div class="text__conteiner">
+        <img src="/smart/imagens/SmartFitSupps/download.jpg" alt="">
         <h2>CONTEÚDOS EXCLUSIVOS</h2>
         <p>Quer receber novidades e promoções Smart Fit Supps?</p>
-    </div>
-
-    <div class="email__conteiner">
         <input type="email" placeholder="  E-mail">
         <button>ASSINAR</button>
     </div>
@@ -281,6 +329,6 @@
         <p>Famix Distribuidora de Produtos LTDA - Todos os direitos reservados.<br>
         CNPJ 28.688.290/0003-99</p>
     </div>
-
+    <script src="ScriptSmartFitSupps.js"></script>
 </body>
 </html>

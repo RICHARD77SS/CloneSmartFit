@@ -119,8 +119,13 @@ header {
     width: 100%;
     height: auto;
 }
+.fitness__conteiner--img {
+    width: 5%;
+    margin: 1rem auto;
+    transform: translateX(-31px);
+}
 .academia__conteiner img {
-    width: 8%;
+    width: 100%;
     margin: 0 43.5%;
 }
 .academia__conteiner h1 {
