@@ -160,22 +160,25 @@
     opacity: 1;
     transition: .5s;
 }
-.slider {
+.slides {
     display: flex;
+    overflow: hidden;
 }
-.slide {
-    position: absolute;
-}
+
 .imagem {
     width: 1342px;
     height: 450px;
-    opacity: 0;
+    opacity: 1;
     transition: all 1s;
 }
 .imagem.selected {
     opacity: 1;
-    left: 0;
+
     transition: all 3s;
+}
+#atual {
+    margin-left: 0;
+    transition: all 2s;
 }
 .balls {
     z-index: 10;
@@ -184,13 +187,16 @@
     margin-left: auto;
     margin-right: auto;
 }
-.balls button {
+.balls div {
     padding: 0px;
     width: 15px;
     height: 15px;
     border-radius: 50px;
     background-color: transparent;
     border: 1px solid #f4f4f4;
+}
+.imgAtual {
+    background-color: #f4f4f4;
 }
 .promo__conteiner {
     width: 100%;
