@@ -168,26 +168,30 @@
 .imagem {
     width: 1342px;
     height: 450px;
-    opacity: 1;
+    opacity: 0;
     transition: all 1s;
+    position: absolute;
+}
+#a0:checked {
+    display: none;
 }
 .imagem.selected {
+    transition: all 1s;
     opacity: 1;
-
-    transition: all 3s;
 }
 #atual {
     margin-left: 0;
     transition: all 2s;
 }
 .balls {
+    display: flex;
     z-index: 10;
     margin-top: 29rem;
     width: 80px;
     margin-left: auto;
     margin-right: auto;
 }
-.balls div {
+.balls button {
     padding: 0px;
     width: 15px;
     height: 15px;
@@ -223,12 +227,12 @@
     width: 60%;
     margin: 10px 10px;
 }
-.desc {
+.descs {
     transform: translatey(-2.7rem);
     text-align: left;
 }
 
-.desc span {
+.descs span {
     width: 300px;
     font-size: 1rem;
     font-family: var(--gotham);
@@ -237,7 +241,7 @@
     margin-left: 4rem;
     
 }
-.desc p {
+.descs p {
     font-size: 1rem;
     font-family: var(--gotham);
     margin-left: 4rem;
@@ -410,20 +414,31 @@
     margin-left: 2px;
     margin-right: 2px;
 }
+.card__conteiner:hover {
+    transform: translateY(-5px);
+}
 .card__conteiner img {
     width: 100%;
     height: auto;
 }
-.card__conteiner button {
+.desc {
     text-align: center;
     font-size: 1rem;
     font-family: var(--gotham);
     font-weight: 600;
     width: 288px;
-    height: 40px;
+    height: 50px;
     background-color: #ffb612;
     border: none;
-    margin-top: 40px;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+.desc:hover {
+    transform: translateY(-25px);
+    transition: all .5s;
+}
+.desc:hover ~ .card__conteiner{
+    transform: translateY(-35px);
 }
 .conteiner__info--smart {
     width: 100%;
