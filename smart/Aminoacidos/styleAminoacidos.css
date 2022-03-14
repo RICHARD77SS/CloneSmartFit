@@ -1,0 +1,594 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--gotham);
+    list-style: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('http://fonts.cdnfonts.com/css/gotham-black?styles=15539');
+@import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+:root {
+    --roboto: 'Roboto', sans-serif;
+    --gotham: 'Gotham Black', sans-serif;
+    --black: 'Black Han Sans', sans-serif;
+}
+body {
+    width: 100%;
+    height: 100%;
+
+}
+.topbar__conteiner {
+    width: 100%;
+    height: 40px;
+    background-color: #ffb612;
+    text-align: center;
+
+}
+.topbar__conteiner h2 {
+    font-size: .8rem;
+    font-weight: 200;
+    color: rgba(0,0,0,0.7);
+    padding: .7rem;
+}
+.header__conteiner {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color:#000;
+}
+.logoheader__conteiner {
+    width: 24%;
+    height: 30px;
+}
+.logoheader__conteiner img {
+    width: 82%;
+}
+.pesquisa__conteiner {
+    width: 30%;
+    height: 30px;
+    padding-left: .5rem;
+}
+.input.pesquisa {
+    width: 275px;
+    height: 30px;
+    border: 1px solid #ccc;
+    background-color: #000;
+    transform: translateX(5px);
+}
+.input.pesquisa:focus {
+    box-shadow: 0 0 10px #f4f4f4;
+}
+.button.pesquisa {
+    width: 30px;
+    height: 30px;
+    transform: translateY(4.5px);
+    border: none;
+    background-color: #ffb612;
+}
+.button.pesquisa img {
+    width: 20px;
+    height: 20px;
+}
+.shop__conteiner {
+    width: 16%;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50px
+}
+.shop__conteiner a {
+    font-size: .8rem;
+    color: #f4f4f4;
+}
+.nav__conteiner {
+    width: 100%;
+    height: 50px;
+    background-color: #000;
+}
+.navlinks__ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navlinks__ul a {
+    font-size: .8rem;
+    font-weight: 700;
+    margin: 0 .7rem;
+    color: #f4f4f4;
+}
+.main__conteiner {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.main__conteiner img {
+    width: 100%;
+    height: auto;
+}
+.main__content {
+    z-index: 10;
+    position: absolute;
+    margin-left: 7%;
+    margin-top: 5%;
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 600;
+}
+.main__content a {
+    font-size: .9rem;
+    color: #fff;
+    font-weight: 400;
+}
+.main__conteiner input {
+    z-index: 10;
+    margin-left: -29.4%;
+    height: 35px;
+    width: 268px;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.2);
+    color: #ffff;
+    margin-top: 5%
+}
+.input:placeholder {
+    color: #fff;
+}
+.itens__conteiner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.produtos {
+    width: 85%;
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.produto__conteiner {
+    width: 247px;
+    margin: 1rem .5rem;;
+}
+.imgback {
+    width: 300px;
+    opacity: 1;
+}
+.imgfront {
+    width: 300px;
+    transform:  translateY(-18.5rem);
+}
+.imgfront:hover {
+    opacity: 0;
+    transition: all .5s;
+}
+.imgfront img {
+    opacity: 1;
+    position: absolute;
+}
+.produto__conteiner span {
+    color: #ffb612;
+    font-size: .7rem;
+}
+.produto__conteiner a {
+    color: #000;
+    font-size: .8rem;
+}
+.produto__conteiner h2 {
+    font-size: 1.2rem;
+    color: #ffb612;
+}
+.produto__conteiner strong {
+    font-size: .7rem;
+    font-weight: 800;
+}
+.produto__conteiner p {
+    font-size: .7rem;
+    margin: .5rem 0;
+}
+.produto__conteiner button {
+    width: 120px;
+    height: 28px;
+    font-size: .7rem;
+    font-weight: 700;
+    border: 2px solid #000;
+    background-color: #fff;
+}
+
+
+.info__conteiner {
+    width: 100%;
+    height: 100%;
+}
+.info__content {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+.txtinfo__conteiner {
+    width: 80%;
+    margin: 0 auto;
+    background-size: cover;
+    background-image: url("/smart/imagens/aminoacidos/bg-black.webp");
+    text-align: center;
+    padding: 2rem 0;
+
+}
+.txtinfo__conteiner h3 {
+    width: 80%;
+    margin: 0 auto;
+    color: #fff;
+}
+.bg1 {
+    width: 65%;
+    left: 20%;
+    position: absolute;
+    z-index: 0;
+    display: none;
+    object-fit: cover;
+}
+.bcaa__conteiner {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #000;
+    background-image: url("/smart/imagens/aminoacidos/white_section_bg.webp");
+    background-size: contain;
+}
+.bcaatext__conteiner {
+    display: flex;
+    width: 80%;
+    height: 100%;
+}
+.bcaa__text {
+    width: 55%;
+
+}
+.bcaa__text h2 {
+    font-size: 4rem;
+    margin: 1rem 0;
+    font-weight: 500;
+    color: #000;
+}
+.bcaa__text p {
+    font-size: 1rem;
+    color: rgba(0,0,0,0.9);
+    margin: 1rem 0;
+}
+.img__conteiner {
+    width: 50%;
+}
+.img__conteiner img{
+    width: 34%;
+    margin-left: 1%;
+    margin-top: 3rem;
+    position: absolute;
+}
+.diferenciais__conteiner {
+    width: 100%;
+    margin: 0 auto;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,0.7);
+}
+.diferenciais__txt {
+    width: 60%;
+    height: 80px;
+    margin: 2rem 0;
+}
+.diferenciais__txt h3 {
+    font-size: 1.5rem;
+    color: #ffb612;
+    margin-left: 4rem;
+    position: absolute;
+}
+.diferenciais__img {
+    width: 50%;
+    height: 100%;
+    display: block;
+    margin-left: 20%;
+    text-align: center;
+}
+#scoop {
+    width: 80px;
+    margin-top: 2rem;
+}
+.prop__conteiner {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto; 
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+.prop__txt {
+    width: 50%
+}
+.prop__txt h4 {
+    color: rgba(0,0,0,0.6);
+    margin-left: 10%;
+}
+.prop__txt span {
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(0,0,0,0.6);
+}
+.prop__txt2 {
+    width: 50%;
+    margin-left: 5%;
+}
+.prop__txt2 p {
+    color: rgba(0,0,0,0.6);
+}
+.idr {
+    margin: 0 auto;
+    width: 80%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+.idr__txt {
+    width: 50%;
+    height: 80px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: rgba(0,0,0,0.6);
+    padding-left: 1rem;
+}
+.prop__t  {
+    width: 50%;
+    margin-left: 2%;
+}
+.prop__t h4 {
+    font-size: 1.2rem;
+    color: rgba(0,0,0,0.6);
+}
+.prop {
+    width: 50%;
+}
+.prop h5{
+    font-size: 2rem;
+    color: rgba(0,0,0,0.6);
+}
+.gluta {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    margin: 0 auto;
+    background-color: rgb(102, 102, 102);
+}
+.gluta__conteiner {
+    width: 35%;
+    height: 50%;
+    margin: 1rem 2rem;
+    padding-top: 4rem
+}
+.gluta__conteiner img {
+    width: 90%;
+}
+.gluta__txt {
+    color: #fff;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+.gluta__txt h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.gluta__txt p {
+    font-size: 1rem;
+    color: rgba(255,255,255,0.5);
+    margin: 2rem 0;
+}
+.glutatxt {
+    width: 333px;
+    height: 82px;
+    border: 2px solid #fff;
+    margin-left: 15%;
+}
+.glutatxt h3 {
+    margin-top: .5rem;
+}
+.glutatxt p {
+    font-size: .7rem;
+    color: #fff;
+    margin: .5rem 0;
+}
+.prin__conteiner {
+    width: 80%;
+    height:  auto;
+    margin: 0 auto;
+    background-color: rgb(102, 102, 102);
+
+}
+.prin__conteiner p {
+    color: rgba(255,255,255);
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 2rem;
+    font-weight: 300;
+}
+.prin__conteiner h5 {
+    color: rgba(255,255,255);
+    margin-left: 45%;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.prin__conteiner img {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 1.5rem;
+}
+
+.crea {
+    background-image: url("/smart/imagens/aminoacidos/bg-cinza.webp");
+    background-size: contain;
+    width: 80%;
+    margin: 0 auto;
+
+}
+.crea img {
+    width: 100%;
+}
+.crea__content {
+    width: 100%;
+    display: flex;
+}
+.crea__txt {
+    width: 50%;
+    margin-left: 5%;
+}
+.crea__txt h2 {
+    font-size: 3.5rem;
+    margin: 2rem 0;
+}
+.crea__txt p {
+    color: rgba(0,0,0,0.6);
+
+    line-height: 1.7rem;
+}
+.crea__img {
+    width: 35%;
+    margin-top: 14rem;
+    margin-left: 5%;
+}
+.crea__img img {
+    width: 100%;
+}
+.dose {
+    width: 330px;
+    height: 90px;
+    margin-left: 30%;
+    border: 2px solid #000;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem
+}
+.dose h3 {
+    margin: .5rem;
+}
+.dose p {
+    font-size: .8rem;
+    color: #000;
+}
+.imgb {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 4rem;
+}
+.block40.b img {
+    width: 100%;
+
+}
+.creapure {
+    width: 80%;
+    height: 100%;
+    background-size: contain;
+    background-image: url("/smart/imagens/aminoacidos/bg-cinza.webp");
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 4rem
+}
+.creapure img{
+    width: 100%;
+}
+.creapure h2 {
+    font-size: 3.5rem;
+    padding-top: 2rem;
+}
+.creapure h3 {
+    font-size: 2rem;
+    padding-top: 2rem;
+}
+.imgc {
+    margin: 1rem auto;
+    width: 70%;
+}
+.creapure__conteiner {
+    width: 80%;
+    display: flex;
+}
+.block30c {
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.block30c img {
+    width: 100%;
+}
+.block70c {
+    width: 60%;
+}
+.block70c p{
+    margin-left: 5%;
+    width: 100%;
+    color: rgba(0,0,0,0.6);
+    line-height: 1.5rem;
+}
+.block4b {
+    width: 330px;
+    height: 80px;
+    border: 2px solid #000; 
+    margin: 0rem auto;
+}
+.block4b h3 {
+    font-size: 1rem;
+}
+.block4b p {
+    font-size: .7rem;
+}
+.footer__conteiner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#000;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem
+}
+.footer__content {
+    width: 23%;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+.footer__content img{
+    width: 200px;
+    margin-left: 2rem;
+}
+.footer__content li {
+    list-style-type: none;
+    padding: .5rem;
+}
+.footer__content a {
+    font-size: 1rem;
+    font-family: var(--gotham);
+    font-weight: 500;
+    color: #f4f4f4;
+    text-decoration: none;
+}
+.footer__content span{
+    color: #ffb612;
+
+}
+.direitos {
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+}
+.direitos p {
+    font-size: .7rem;
+    font-family: var(--gotham);
+    font-weight: 500;
+    color: #f4f4f4;
+}
