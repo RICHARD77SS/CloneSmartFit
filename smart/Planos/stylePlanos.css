@@ -1,0 +1,478 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:  'Gotham Black', sans-serif;
+}
+@import url('http://fonts.cdnfonts.com/css/gotham-black?styles=15539');
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+.header {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 3;
+}
+.nav {
+    width: 100%;
+    height: 60px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#nav.active #menu {
+    background-color: #000;
+}
+.menu {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-left: 20%;
+}
+.menu li a {
+    color: #f4f4f4;
+}
+.menu li a:visited {
+    color: #f4f4f4;
+}
+.menu li a:active {
+    color: #f4f4f4;
+}
+.menu li a:hover {
+    color: #ffb612;
+}
+
+.menu__content {
+    display: none;
+    width: 500px;
+    height: 700px;
+    background-color: #f4f4f4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: scroll;
+}
+.menu__content img {
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+.menu__content.change {
+    display: block;
+}
+.menu2 li a{
+    display: block;
+    padding: 10px 20px;
+    border-right: 1px solid #f4f4f4;
+    text-decoration: none;
+    clear: both;
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.3rem;
+    font-weight: 100;
+    font-family: var(--roboto);
+    text-align: left;
+
+}
+.menu2 li a:hover {
+    color: #ffb612;
+}
+
+.menu2 {
+    width: 300px;
+    height: 700px;
+    background-color: #fff;
+    clear: both;
+    max-height: 0;
+    transition: .2s ease-out;
+
+}
+.duvidas img {
+    width: 90px;
+    margin: 0;
+
+}
+.duvidas p{
+    font-size: .8rem;
+}
+
+.menu_icon {
+    cursor: pointer;
+    padding: 2px 2px;
+    position: relative;
+    user-select: none;
+    margin-right: 80px;
+}
+.btn__menu {
+    transform: translateY(-2px);
+    text-align: center;
+    display: block;
+    width: 24px;
+    height: 21px;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 2px;
+}
+.btn__menu:hover {
+    background-color: #ffb612;
+}
+.btn__menu.change {
+    width: 40px;
+    height: 40px;
+    z-index: 20;
+    margin-left: 9rem;
+}
+.btn__menu p {
+    color: transparent;
+    position: absolute;
+    font-size: 1.5rem;
+}
+.btn__menu.change:hover{
+    background-color: #808080;
+}
+.btn__menu.change .dash {
+    background: transparent;
+}
+.btn__menu.change p{
+    padding-left: 12.5px;
+    color: #000;
+}
+.dash {
+    width: 24px;
+    height: 5px;
+    margin-bottom: 2px;
+    background: rgb(0, 0, 0);
+}
+
+.link {
+    color: #fff;
+    list-style: none;
+    font-weight: bold;
+    margin-left: 15px;
+    font-family: var(--roboto);
+    font-size: 14px;
+}
+
+.link:hover {
+    color: #ffb612;
+    cursor: pointer;
+}
+.h2-pl {
+    font-size: 2.7em;
+    font-weight: 700;
+    font-family: var(--gotham);
+    color: #fff;
+
+}
+.menu_icon {
+    background-color:#fff;
+    width: 20px;
+    height: 18px;
+    border-radius: 2px;
+    margin-left: 20px;
+}
+.hr {
+    border: none;
+}
+.logo {
+    width: 150px;
+    height: 60px;
+    margin-left: 30%;
+}
+.main {
+    width: 100%;
+    height: 25rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-blend-mode: soft-light;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/smart/imagens/imprensa/download.jpg");
+}
+.main__conteiner {
+    width: 300px;
+    height: 25rem;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 9rem;
+}
+.main__conteiner a {
+    color: #ffb612;
+
+}
+.main__conteiner h1 {
+    color:#ffb612;
+    margin-top: 4rem;
+    font-size: 3.5rem;
+}
+.content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+.plan__conteiner {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    padding-top: 4rem;
+    text-align: center;
+}
+.plan__content {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.plan__conteiner h2 {
+    font-size: 2rem;
+    font-weight: 300;
+    color:rgba(0, 0, 0, 0.8);
+}
+.plan__card.b h2 {
+    color: #fff;
+}
+.plan__card {
+    width: 339px;
+    height: 800px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    margin-top: 3rem;
+}
+.plan__card.b {
+    background-color: rgb(22, 22, 22);
+}
+.plan__card h3 {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+}
+.plan__card.b h3 {
+    color: #fff;
+}
+.plan__card p {
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+.plan__card span {
+    font-size: 3rem;
+}
+.plan__card h6 {
+    font-size: .6rem;
+    color:rgba(0, 0, 0, 0.5);
+    margin: 1.5rem 0;
+}
+.plan__card.b h6 {
+    color: #fff;
+}
+.plan__card.b p {
+    color: #fff;
+}
+.plan__card button {
+    width: 210px;
+    height: 71px;
+    background-color: #fff;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    font-weight: 700;;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+.plan__card button:hover {
+    background-color: #f4f4f4;
+}
+.card__text {
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 1rem;
+    text-align: left;
+}
+.card__text.b {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.card__text p{
+    font-size: .9rem;
+    width: 250px;
+    margin: .6rem auto;
+}
+.card__text strong {
+    font-size: 1rem;;
+}
+.plan__card.b h3 {
+
+}
+
+.cad__conteiner {
+    width: 100%;
+    height: 197px; 
+    background-color: #f4f4f4;
+}
+.cad__content {
+    width: 80%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+.cad__content h3 {
+    padding: 2rem 0;
+}
+.cad__content input {
+    width: 35%;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-right: none;
+    background-color: #f4f4f4;
+}
+.cad__content button {
+    width: 120px;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: none;
+    background-color: #f4f4f4;
+}
+.produtos__conteiner {
+    width: 100%;
+    height: 560px;
+    opacity: 1;
+    background-image: url("/smart/imagens/Planos/aparelhos.jpg");
+}
+.produtos__conteiner h2 {
+    margin-left: 55%;
+    padding-top: 12%;
+    color: #ffb612;
+    font-size: 2.5rem;
+}
+.nutri__conteiner {
+    width: 100%;
+    height: auto;
+}
+.nutri__content {
+    width: 80%;
+    height: 1100px;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+.nutri__content img {
+    width: 100%;
+}
+.nutri__content h2 {
+    margin-top: 3rem;
+    margin-left: 2rem;
+    color:rgba(0, 0, 0, 0.7);
+    font-size: 2rem;
+    font-weight: 500;
+}
+.nutri__content p {
+    width: 94%;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+.nutri__content a {
+    margin-left: 1rem;
+    font-size: .8rem;
+    text-decoration: underline;
+    color:rgba(0, 0, 0, 0.5);
+}
+.ref {
+    margin-top: 10rem;
+}
+.termos__conteiner {
+    width: 100%;
+    height: 15rem;
+}
+.termos__content {
+    width: 40%;
+    margin: 8rem auto;
+    text-align: center;
+}
+.termos__content h3 {
+    font-size: 2rem;
+    font-weight: 200;
+    color:rgba(0, 0, 0, 0.7);
+}
+.termos__content p {
+    margin-top: 2rem;
+    font-size: 1.1rem;
+}
+.termos__content button {
+    width: 250px;
+    height: 71px;
+    margin: 1rem;
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: .8rem;
+    font-weight: 700;
+}
+.termos__content button:hover {
+    background-color: #f4f4f4;
+}
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #202020;
+    color: #bbb;
+    font-family: var(--roboto);
+}
+.footer div {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+.smart-links img{
+    width: 16px;
+}
+.img_footer {
+    padding: 2rem;
+    width: 250px;
+}
+.footer ul {
+    width: 200px;
+    height: auto;
+    color: #fff;
+    margin: auto
+}
+.footer li {
+    list-style: none;
+}
+.info__content {
+    padding-top: 1rem;
+    width: 80%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hr__footer {
+    border: 1px solid rgba(255,255,255,0.2);
+    width: 1050px;
+    margin: auto;
+}
+.footer__u {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left;
+    padding-top: 1rem;
+}
+.footer__u p {
+    margin: 2rem;
+    font-size: 0.7rem;
+}
+.hr__footer2 {
+    display: none;
+}
+.footer ul li a {
+    color: #f4f4f4;
+}
