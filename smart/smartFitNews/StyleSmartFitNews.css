@@ -46,10 +46,10 @@ body {
 }
 .menu__conteiner a {
     color: #f4f4f4;
-    font-size: 1rem;
+    font-size: .9rem;
     font-family: var(--gotham);
     font-weight: 700;
-    margin: 1rem;
+    margin: .5rem;
 }
 a.aamarelo {
     color:#ffc222;
@@ -61,6 +61,14 @@ a.aamarelo {
     border: none;
     font-size: 1rem;
     font-family: var(--roboto);
+    display: none;
+}
+#pesquisa.change {
+    display: block;
+}
+.menu__conteiner button {
+    background-color: transparent;
+    border: none;
 }
 .menu__conteiner img {
     transform: translateY(.6rem);
@@ -123,13 +131,13 @@ main {
 }
 .banner {
     width: 100%;
-    height: 522px;
+    height: 422px;
     display: flex;
     position: relative;
 }
 .bannerRotativo__conteiner img {
     width: 100%;
-    height: 100%;
+    height: auto;
     position: absolute;
     border-radius: 5px;
     opacity: 0;
@@ -166,7 +174,7 @@ button.r {
 }
 .banner__button--circle {
     width: 100px;
-    margin-left: auto;
+    margin-left: 47.5%;
     margin-right: auto;
 }
 .banner__button--circle button{
@@ -192,7 +200,18 @@ button.r {
     background-color: #000;
     margin-top: 1rem;
 }
-
+.newsText1__conteiner {
+    width: 85%;
+    height: 50px;
+    display: flex;
+    margin: 2rem auto;
+}
+.newsText1__conteiner span {
+    width: 450px;
+    height: 4px;
+    background-color: #000;
+    margin-top: 1rem;
+}
 
 .news__conteiner h2 {
     width: 190px;
@@ -203,15 +222,17 @@ button.r {
     font-family: var(--gotham);
 }
 .news__content {
-    width: 85%;
+    width: 90%;
     height: auto;
     display: flex;
+    flex-wrap:  wrap;
     justify-content: space-between;
     margin: 2rem auto;
 }
 .news__cards {
     width: 350px;
     height: auto;
+    margin: 10px;
 }
 .news__cards .img {
     width: 100%;
@@ -367,8 +388,8 @@ button.r {
     margin: 1rem 0;
 }
 .fitness__content img{
-    width: 260px;
-    height: 177px;
+    width: 30%;
+    height: 50%;
 }
 .fitness__description {
     margin-left: 2rem;
@@ -392,9 +413,6 @@ button.r {
 }
 .conteiner__fitness.c {
     background-color: #32CD32;
-}
-.banners__content {
-
 }
 .newsletter__conteiner {
     width: 260px;
@@ -539,4 +557,151 @@ button.r {
     background-color: #ffc222;
     border: none;
     margin: .5rem;
+}
+
+@media screen and (max-width: 910px) {
+    .menu__conteiner {
+        display: none;
+    }
+    .header__conteiner a {
+        font-size: 1rem;
+    }
+    .header__conteiner img {
+        width: 15%;
+    }
+    .banner {
+        height: 200px;
+    }
+    .banner__button--arrow {
+        transform:  translateY(-5.5rem);
+    }
+    .news__content {
+        width: 80%;
+    }
+    .news__cards {
+        margin: 2rem auto;
+    }
+    .newsText__conteiner {
+        margin-left: -7%;
+    }
+    .recentes__conteinr {
+        width: 80%;
+    }
+    .h3recentes {
+        font-size: 1.8rem;
+    }
+    .recentes__conteiner {
+        width: 80%;
+        margin-left: -5%;
+    }
+    .banners__content {
+        width: 50%;
+    }
+    .newsletter__conteiner {
+        width: 95%;
+        height: auto;
+        margin-left: -25%;
+    }
+    .banner3__conteiner {
+        width: 95%;
+        margin-left: -25%;
+    }
+    .banner4__conteiner {
+        width: 95%;
+        margin-left: -25%;
+    }
+    .h3__siga {
+        margin-left: 25%;
+    }
+    .footer__logo--conteiner img{
+        width: 90%;
+    }
+    .footer__medias--conteiner button {
+        width: 25px;
+        height: 25px;    }
+}
+
+@media screen and (max-width: 500px) {
+    .logo__conteiner {
+        margin-left: -5%;
+    }
+    .header__conteiner a {
+        font-size: .8rem;
+    }
+    .header__conteiner img {
+        width: 20%;
+    }
+    .banner {
+        height: 100px;
+    }
+    .banner__button--arrow {
+        transform:  translateY(-3rem);
+    }
+    .r {
+        margin-right: 40px;
+    }
+    .banner__button--circle {
+        margin-left: 45%;
+    }
+    .newsText__conteiner {
+        margin-left: 8%;
+    }
+    .banner3__conteiner {
+        width: 95%;
+        margin-left: 2%;
+    }
+    .banner4__conteiner {
+        width: 95%;
+        margin-left: 2%;
+    }
+    .redes__conteiner {
+        width: 70%;
+        position: absolute;
+        transform: translateY(135rem);
+    }
+    .recentes__conteinr {
+        width: 100%;
+    }
+    .recente__content {
+        width: 100%;
+        margin-left: 10%;
+    }
+    .recentesNews {
+        display: block;
+    }
+    .banners__content {
+        width: 80%;
+        margin-left: 18%;
+        margin-top: 15rem;
+    }
+    .newsletter__conteiner {
+        width: 100%;
+        margin-left: 0;
+    }
+    .h3__siga {
+        font-size: 1.5rem;
+        margin-left: 10%;
+    }
+    .footer {
+        display: block;
+        height: auto;
+    }
+    .footer__logo--conteiner {
+        width: 80%;
+        margin-left: 15%;
+    }
+    .footer__logo--conteiner img {
+        width: 70%;
+        margin: 2rem 1rem
+    }
+    .footer__direitos--conteiner {
+        width: 80%;
+        margin-left: 15%;
+    }
+    .footer__medias--conteiner {
+        width: 80%;
+        margin-left: 23%;
+        margin-top: 1.5rem;
+        padding-bottom: 2rem;
+    }
 }

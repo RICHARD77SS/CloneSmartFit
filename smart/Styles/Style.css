@@ -241,7 +241,6 @@ span {
     color: #fff;
 }
  .dec{
-
     font-size: 1.3em;
     font-family: var(--gotham);
     color: #fff;
@@ -451,15 +450,13 @@ h5 {
     background-color: #fff;
     display: flex;
     justify-content: space-between;
-    
-    overflow-y: hidden;
+    overflow: hidden;
     scroll-snap-type: x mandatory;
 }
 .card__services {
     width: 280px;
     height: 420px;
     border-radius: 20px;
-    margin: 1%;
     align-content: center;
     flex: none;
     scroll-snap-align: start;
@@ -812,11 +809,13 @@ h5 {
     .menu__content {
         width: 350px;
     }
+
     .conteiner-app-img img {
-        max-width: 350px;
+        max-width: 100%;
     }
     .conteiner-app-desc {
-        width: 350px;
+        width: 80%;
+        margin-left: 8%;
         text-align: center;
     }
     .receba-email input {
@@ -843,5 +842,8 @@ h5 {
     }
     .balls {
         margin-left: 34%;
+    }
+    .cards--conteiner {
+        margin-top: 2.5rem;
     }
 }

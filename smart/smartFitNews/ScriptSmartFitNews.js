@@ -23,3 +23,9 @@ function start() {
 }
 
 window.addEventListener("load", start)
+
+//Adiciona a class "change" aos elementos
+function onClickMenu() {
+    document.getElementById("pesquisa").classList.toggle("change");
+    
+}

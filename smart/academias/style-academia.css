@@ -27,7 +27,7 @@ body {
     z-index: 3;
 }
 .logoc {
-    width: 20%
+    width: 20%;
 }
 .logo {
     transform:  translateX(-10rem);
@@ -210,7 +210,7 @@ body {
     margin-left: 6rem;
 }
 .conteiner__academias-proximas {
-    width: 100vw;
+    width: 100%;
     padding-bottom: 4rem;
     margin-top: 2rem;
 }
@@ -237,7 +237,7 @@ body {
     padding: .3rem .6rem;
 }
 .content__pesquisa {
-    width: 78%;
+    width: 80%;
     display: flex;
     align-items: center;
     align-content: center;
@@ -255,7 +255,7 @@ body {
     width: 100px;
     height: 47px;
     background-color: #ccc;
-    padding: .9rem 2.4rem;
+    padding: .9rem .5rem;
     border: none;
     font-size: 1rem;
     border-top-right-radius: 50px;
@@ -269,10 +269,11 @@ body {
     transform: translateY(-5px);
 }
 .btn__diferenciais {
+
     background-color: transparent;
     border: none;
     color: #ffb612;
-    padding: .8rem 1rem;
+    padding: .8rem .5rem;
     font-size: 4rem;
     transform: rotate(90deg);
 }
@@ -394,15 +395,16 @@ body {
     transform: translateY(-1.5px);
 }
 .academias {
-    width: 100vw;
+    width: 100%;
     height: auto;
     background-color: #f4f4f4;
 
 }
 .academias__conteiner {
-    width: 65%;
+    width: 80%;
     height: auto;
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
     margin-left: auto;
@@ -727,4 +729,63 @@ body {
 .footer a {
     text-decoration: none;
     color:#f4f4f4
+}
+
+@media screen and (max-width: 910px) {
+    .menu li {
+        display: none;
+    }
+    .logoc {
+        margin-left: -20%;
+    }
+    .nav {
+        margin-right: -20% 
+    }
+    .content__pesquisa {
+        width: 100%;
+    }
+    .pesquisar__academias label {
+        margin-left: 8px;
+    }
+    .btn__diferenciais {
+        width: 20px;
+        margin-right: -20px;
+        margin-left: 30px;
+        margin-top: -3rem;
+    }
+    .academias__conteiner {
+        width: 100%;
+    }
+    .carregarmais {
+    margin-left: -24px;
+    }
+    .info__content {
+        display: block;
+    }
+    .info__content ul {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hr__footer2 {
+        display: block;
+        margin: 1rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .logoc {
+        margin-left: 5%;
+    }
+    .carregarmais {
+    margin-left: -70px;
+    }
+    .receba-email h3 {
+        width: 80%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .receba-email input {
+        width: 68%;
+        margin-left: -2px;
+    }
 }
