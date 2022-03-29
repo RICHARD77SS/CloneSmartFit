@@ -26,7 +26,9 @@ function start() {
 window.addEventListener("load", start)
 
 
-
+function onClickMenu() {
+    document.getElementById("links").classList.toggle("change");
+}
 
 
 

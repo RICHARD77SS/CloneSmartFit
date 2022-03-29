@@ -14,13 +14,13 @@
 }
 .top__conteiner {
     width: 100%;
-    height: 40px;
+    height: auto;
     background-color: #ffb612;
     text-align: center;
 }
 .black20 {
     color: black;
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 200;
     font-family: var(--gotham);
     align-items: center;
@@ -37,13 +37,11 @@
     align-items: center;
     justify-content: space-evenly;
 }
-
-.header__conteiner {
-    height: 60px;
-    background-color: rgba(0, 0, 0);
-    z-index: 999;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+.btn__menu {
+    display: none;
+}
+.btn__close--menu {
+    display: none;
 }
 .logo__conteiner {
     width: 25%;
@@ -107,6 +105,12 @@
     display: flex;
     justify-content: space-evenly;
 }
+.links.change {
+    display: block;
+}
+.link.home {
+    display: none;
+}
 .link {
     list-style-type: none;
 
@@ -119,12 +123,9 @@
     color: #f4f4f4;
 }
 .banner__conteiner {
- 
+    width: 100%;
     height: auto;
     background-color: #000;
-}
-.banner__conteiner {
-    height: 500px;
 }
 .esquerda {
     position: absolute;
@@ -166,8 +167,8 @@
 }
 
 .imagem {
-    width: 1342px;
-    height: 450px;
+    width: 100%;
+    height: 80%;
     opacity: 0;
     transition: all 1s;
     position: absolute;
@@ -557,4 +558,55 @@
     font-family: var(--gotham);
     font-weight: 500;
     color: #f4f4f4;
+}
+
+@media screen and (max-width: 1000px) {
+    .input__pesquisa {
+        display: none;
+    }
+    .btn__pesquisa {
+        background-color: transparent;
+        margin-left: 70%;
+    }
+    .login__conteiner {
+        display: none;
+    }
+    .btn__menu{
+        width: 20px;
+        height: 21px;
+        display: block;
+    }
+    .dash {
+        width: 20px;
+        height: 5px;
+        background-color: #000;
+        margin-bottom: 2px;
+        margin-left: -2px
+    }
+    .navbar {
+        display: none;
+    }
+    .promo__conteiner {
+        display: block;
+    }
+    .clube__conteiner {
+        width: 90%;
+        margin-bottom: 1rem
+    }
+    .entrega__conteiner {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
+    .cash__conteiner {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 1rem;
+    }
+    .lancamentos__conteiner h2 {
+        font-size: 1.4rem;
+        margin-left: 30%;
+    }
 }

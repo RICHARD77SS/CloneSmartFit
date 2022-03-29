@@ -130,13 +130,16 @@ header {
 }
 .academia__conteiner h1 {
     font-size: 2.5rem;
-    margin: 0 43.5%;
     color: #f8b904;
 }
 .academia__conteiner p {
     width: 210px;
-    margin: 2rem 43.5%;
     color: #f4f4f4;
+}
+.academia__desc {
+    width: 210px;
+    height: auto;
+    margin: 0 auto;
 }
 .banner__conteiner {
     width: 100%;
@@ -173,7 +176,7 @@ header {
     background-color: #f4f4f4;
 }
 .news__img {
-    width: 337px;
+    width: 100%;
     margin: 10px 20px;
 
 }
@@ -209,7 +212,7 @@ header {
     background-color: #f4f4f4;
 }
 .news__img-2 {
-    width: 348px;
+    width: 100%;
     height: 250px;
 }
 .news__img-2.c {
@@ -257,7 +260,7 @@ header {
     margin-top: 15px;
 }
 .news__text-2 {
-    width: 348px;
+    width: 100%;
     height: 351px;
     border: 6px solid #f8b904;
 
@@ -290,7 +293,8 @@ header {
 
 .footer {
     width: 100%;
-    height:200px;
+    height: auto;
+    padding: 2rem 0;
     display: flex;
     background-color: #000;
     align-items: center;
@@ -322,4 +326,77 @@ header {
     background-color: #ffc222;
     border: none;
     margin: .5rem;
+}
+@media screen and (max-width: 900px) {
+    .header__conteiner img {
+        width: 20%
+    }
+    .header__conteiner button a {
+        font-size: .7rem;
+    }
+    .banner__content h3 {
+        font-size: 1.5rem;
+        height: 4.3rem;
+    }
+     .news__content {
+        display: block;
+    }
+    .news__img {
+        width: 99%;
+        margin: 0 auto;
+    }
+    .news__text {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .news__text h2 {
+        font-size: 1.5rem
+    }
+
+    .btn3,.btn7,.menu__conteiner {
+        display: none
+    }
+    .buttons {
+        margin-left: 30%;
+    }
+    .footer__direitos--conteiner {
+        width: 20%;
+        margin-left: 5%;
+
+    }
+    .footer__medias--conteiner button {
+        width: 25px;
+        height: 25px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .banner__content h3 {
+        font-size: 1rem;
+        height: 4.3rem;
+    }
+    .news__text h2 {
+        font-size: 1rem
+    }
+    .news__content-2 {
+        width: 300px;
+    }
+    .buttons {
+        margin-left: 10%;
+    }
+    .footer {
+        display: block;
+    }
+    .footer__logo--conteiner {
+        margin: 0 auto;
+        width: 60%
+    }
+    .footer__direitos--conteiner {
+        text-align: center;
+        width: 75%;
+        margin: 2rem auto;
+    }
+    .footer__medias--conteiner {
+        width: 60%;
+        margin: 0 auto;
+    }
 }

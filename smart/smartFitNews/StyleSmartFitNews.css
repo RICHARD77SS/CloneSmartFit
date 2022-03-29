@@ -7,6 +7,7 @@
 body {
     width: 100%;
     height: 100%;
+    overflow-x: hidden
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('http://fonts.cdnfonts.com/css/gotham-black?styles=15539');
@@ -560,6 +561,9 @@ button.r {
 }
 
 @media screen and (max-width: 910px) {
+    .nav__conteiner {
+        width: 100%;
+    }
     .menu__conteiner {
         display: none;
     }
@@ -657,7 +661,7 @@ button.r {
     .redes__conteiner {
         width: 70%;
         position: absolute;
-        transform: translateY(135rem);
+        transform: translateY(130rem);
     }
     .recentes__conteinr {
         width: 100%;
@@ -681,6 +685,13 @@ button.r {
     .h3__siga {
         font-size: 1.5rem;
         margin-left: 10%;
+    }
+    .sobre__conteiner {
+        margin-left: 10%;
+    }
+    .btn__euquero {
+        margin-left: 8%;
+        margin-right: 18%;
     }
     .footer {
         display: block;
