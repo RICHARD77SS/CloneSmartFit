@@ -406,6 +406,8 @@ body {
 }
 .footer div {
     width: 250px;
+    height: auto;
+    padding-bottom: 1rem;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -454,4 +456,69 @@ body {
 }
 .footer ul li a {
     color: #f4f4f4;
+}
+@media screen and (max-width: 1000px ) {
+    .menu li {
+        display: none
+    }
+    .btn__menu {
+        margin-left: 20rem;
+    }
+    .main__conteiner  {
+        margin: 0 auto;
+    }
+    .acesso__text p {
+        width: 190px;
+    }
+    .produtos__conteiner h2, .produtos__conteiner p {
+        margin-left: 25%;
+    }
+}
+@media screen and (max-width: 600px ) {
+    .btn__menu {
+        margin-left: 5rem;
+    }
+    .main__conteiner p {
+        width: 85%;
+        font-size: 1.4rem;
+        margin-left: 5%;
+    }
+    .acesso__content {
+        display: block;
+        margin-left: 20%;
+    }
+    .acesso__text p {
+        width: 250px
+    }
+    .produtos__conteiner h2,
+    .produtos__conteiner p {
+        margin-left: 10%;
+    }
+    .produtos__conteiner h2 {
+        font-size: 2rem;
+    }
+    .produtos__conteiner p {
+        width: 85%;
+    }
+    .equipa__content {
+        display: block;
+        width: 90%;
+    }
+    .equipa {
+        width: 90%
+    }
+    .equipa p {
+        width: 90%
+    }
+    .icons__conteiner.b {
+        display: block;
+    }
+    .info__content {
+        display: block;
+    }
+    .hr__footer2 {
+        display: block;
+        margin: 1rem 0;
+    } 
+
 }

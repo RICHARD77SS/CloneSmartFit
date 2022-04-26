@@ -25,14 +25,12 @@ body {
 .logo__conteiner {
     width: 30%;
     height: auto;
-    margin-left: 5%;
 }
 .logo__conteiner img {
     width: 150px;
 }
 .navbar__links {
-    width: 60%;
-    margin-left: 15%;
+    width: 65%;
     height: auto;
 }
 .navbar__links ul {
@@ -48,11 +46,14 @@ body {
 }
 .link1 a{
     font-family: var(--gotham);
-    font-size: .8rem;
+    font-size: .7rem;
     font-weight: 600;
     color: #ffffff;
     text-decoration: none;
-    margin: 1rem
+    margin: .5rem;
+}
+.link1 {
+    list-style-type: none;
 }
 .link a {
     font-family: var(--gotham);
@@ -131,7 +132,7 @@ body {
     height: 1000px;
 }
 .agende__conteiner {
-    width: 50%;
+    width: 40%;
     margin-left: 10%;
     margin-top: 2rem;
 }
@@ -305,7 +306,7 @@ body {
     color: #fff;
     text-decoration: none;
 }
-@media screen and (max-width: 910px) {
+@media screen and (max-width: 960px) {
     .menu__icon {
         margin-right: 20px;
     }

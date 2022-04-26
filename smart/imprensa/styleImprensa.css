@@ -324,6 +324,7 @@ body {
     background-color: #202020;
     color: #bbb;
     font-family: var(--roboto);
+    padding-bottom: 2rem;
 }
 .footer div {
     width: 250px;
@@ -377,3 +378,34 @@ body {
     color: #f4f4f4;
 }
 
+@media screen and (max-width: 600px) {
+    .menu li {
+        display: none;
+    }
+    .menu__content {
+        width: 380px;
+    }
+    .content {
+        display: block;
+    }
+    .txt {
+        width: 75%;
+    }
+    .form {
+        width: 100%;
+        margin-left: 10%;
+    }
+    .fieldset button {
+        margin-left: 28%;
+    }
+    .cad__content input{
+        width: 50%;
+    }
+    .info__content{
+        display: block;
+    }
+    .hr__footer2 {
+        display: block;
+        margin: 1rem 0;
+    }
+}

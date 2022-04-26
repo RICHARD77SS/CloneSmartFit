@@ -124,7 +124,7 @@
 }
 .banner__conteiner {
     width: 100%;
-    height: auto;
+    height: 100%;
     background-color: #000;
 }
 .esquerda {
@@ -162,13 +162,14 @@
     transition: .5s;
 }
 .slides {
+    width: 100%;
     display: flex;
     overflow: hidden;
 }
 
 .imagem {
     width: 100%;
-    height: 80%;
+    height: 70%;
     opacity: 0;
     transition: all 1s;
     position: absolute;
@@ -586,6 +587,9 @@
     .navbar {
         display: none;
     }
+    .imagem {
+        height: 70%;
+    }
     .promo__conteiner {
         display: block;
     }
@@ -608,5 +612,10 @@
     .lancamentos__conteiner h2 {
         font-size: 1.4rem;
         margin-left: 30%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .imagem {
+        height: 40%;
     }
 }

@@ -57,7 +57,7 @@ body {
 
 .menu__content {
     display: none;
-    width: 500px;
+    width: 35%;
     height: 700px;
     background-color: #f4f4f4;
     position: absolute;
@@ -74,15 +74,16 @@ body {
 }
 .menu2 li a{
     display: block;
-    padding: 10px 20px;
+    padding: 40px 20px;
     border-right: 1px solid #f4f4f4;
     text-decoration: none;
     clear: both;
     color: rgba(0, 0, 0, 0.5);
-    font-size: 1.3rem;
+    font-size: 1.9rem;
     font-weight: 100;
     font-family: var(--roboto);
     text-align: left;
+    margin: 20px 0;
 
 }
 .menu2 li a:hover {
@@ -90,7 +91,7 @@ body {
 }
 
 .menu2 {
-    width: 300px;
+    width: 100%;
     height: 700px;
     background-color: #fff;
     clear: both;
@@ -131,7 +132,7 @@ body {
     width: 40px;
     height: 40px;
     z-index: 20;
-    margin-left: 9rem;
+    margin-left: 3rem;
 }
 .btn__menu p {
     color: transparent;
@@ -156,12 +157,16 @@ body {
 }
 
 .link {
+    height: 44px;
     color: #fff;
     list-style: none;
     font-weight: bold;
     margin-left: 15px;
     font-family: var(--roboto);
     font-size: 14px;
+}
+.link.espaco {
+    transform: translateY(-2.3rem);
 }
 
 .link:hover {
@@ -288,6 +293,7 @@ body {
     margin-bottom: 2rem;
     font-weight: 700;;
     border: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 .plan__card button:hover {
     background-color: #f4f4f4;
@@ -308,10 +314,6 @@ body {
 .card__text strong {
     font-size: 1rem;;
 }
-.plan__card.b h3 {
-
-}
-
 .cad__conteiner {
     width: 100%;
     height: 197px; 
@@ -327,7 +329,7 @@ body {
     padding: 2rem 0;
 }
 .cad__content input {
-    width: 35%;
+    width: 45%;
     height: 60px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-right: none;
@@ -352,13 +354,18 @@ body {
     color: #ffb612;
     font-size: 2.5rem;
 }
+.produtos__conteiner p {
+    color: #fff;
+    margin-left: 55%;
+}
 .nutri__conteiner {
     width: 100%;
     height: auto;
 }
 .nutri__content {
     width: 80%;
-    height: 1100px;
+    height: auto;
+    padding-bottom: 4rem;
     margin: 0 auto;
     border: 1px solid rgba(0, 0, 0, 0.5);
 }
@@ -373,7 +380,7 @@ body {
     font-weight: 500;
 }
 .nutri__content p {
-    width: 94%;
+    width: 85%;
     margin-left: 2rem;
     margin-bottom: 3rem;
     font-size: 1.1rem;
@@ -381,7 +388,7 @@ body {
 }
 .nutri__content a {
     margin-left: 1rem;
-    font-size: .8rem;
+    font-size: .7rem;
     text-decoration: underline;
     color:rgba(0, 0, 0, 0.5);
 }
@@ -424,6 +431,7 @@ body {
     background-color: #202020;
     color: #bbb;
     font-family: var(--roboto);
+    padding-bottom: 4rem;
 }
 .footer div {
     width: 250px;
@@ -475,4 +483,67 @@ body {
 }
 .footer ul li a {
     color: #f4f4f4;
+}
+
+@media screen and (max-width: 960px) {
+    .menu .link {
+        display: none;
+    }
+    .btn__menu {
+        margin-right: -13rem;
+    }
+    .produtos__conteiner h2 {
+        margin-left: 30%;
+    }
+    .produtos__conteiner p {
+        margin-left: 30%;
+    }
+    .menu__content {
+        width: 50%
+    }
+    .cad__conteiner input {
+        width: 60%
+    }
+}
+@media screen and (max-width: 550px) {
+    .btn__menu {
+        margin-right: -3rem;
+    }
+    .plan__content {
+        display: block;
+    }
+    .plan__card {
+        margin: 2rem 0;
+        margin-left: -6%;
+    }
+    .produtos__conteiner h2 {
+        margin-left: 10%;
+    }
+    .produtos__conteiner p {
+        margin-left: 10%;
+    }
+    .menu__content {
+        width: 100%
+    }
+    .btn__menu.change {
+        margin-left: -5%;
+    }
+    .termos__content {
+        width: 85%
+    }
+    .termos__content h3 {
+        font-size: 1.5rem;
+    }
+    .cad__content button {
+        width: 100px;
+        font-size: .7rem;
+    }
+    .info__content, .hr__footer2 {
+        display: block;
+    }
+    .info__content ul{
+       margin-top: 1rem;
+       margin-bottom: 1rem;
+    }
+
 }

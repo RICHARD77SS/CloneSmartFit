@@ -100,7 +100,7 @@ body {
     height: 900px;
 }
 .login__conteiner {
-    width: 480px;
+    width: 55%;
     height: 537px;
     background-color: #fff;
     margin-left: auto;
@@ -240,4 +240,28 @@ body {
     }
 .hr__footer2 {
     display: none;
+}
+@media screen and (max-width: 500px) {
+    .title {
+        margin-left: -10%;
+    }
+    .title h1{
+        font-size: 1rem;
+    }
+    .pais {
+        margin-left: 70%;
+    }
+    .login__conteiner {
+        width: 100%
+    }
+    .info__content {
+        display: block;
+        text-align: center;
+    }
+    .footer ul {
+        padding-bottom: 1rem
+    }
+    .hr__footer2 {
+        display: block;
+    }
 }

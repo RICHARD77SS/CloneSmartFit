@@ -120,14 +120,24 @@ body {
     margin-right: 80px;
 }
 .btn__menu {
-    transform: translateY(-1.5rem);
     text-align: center;
     display: block;
     width: 24px;
     height: 21px;
-    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-left: 1rem;
     border: none;
     border-radius: 2px;
+    transform: translateY(-.1rem);
+    cursor: pointer;
+    background-color: transparent;
+}
+.dash {
+    width: 24px;
+    height: 3px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+    background: #fff;
 }
 .btn__menu:hover {
     background-color: #ffb612;
@@ -136,7 +146,6 @@ body {
     width: 40px;
     height: 40px;
     z-index: 20;
-    margin-left: 4rem;
 }
 .btn__menu p {
     color: transparent;
@@ -153,13 +162,6 @@ body {
 .btn__menu.change p{
     padding-left: 12.5px;
     color: #000;
-}
-.dash {
-    width: 30px;
-    height: 5px;
-    margin-bottom: 2px;
-    margin-left: -2px;
-    background: #000;
 }
 
 .link {
@@ -433,6 +435,9 @@ li {
     display: block;
     margin-left: 1rem;
     margin-top: 3px;
+}
+.link-app a{
+    cursor: pointer;
 }
 h5 {
     margin-top: 3rem;
@@ -730,8 +735,6 @@ h5 {
     }
     .covid-conteiner {
         width: 190px;
-        
-        
     }
     .card__covid {
         width: 190px;
@@ -811,6 +814,11 @@ h5 {
     .nav {
         align-items: flex-end;
     }
+    .btn__menu {
+        margin-left: 14rem;
+        transform: translateY(-1.5rem);
+    }
+    
 }
 
 @media screen and (max-width: 500px) {
@@ -853,5 +861,11 @@ h5 {
     }
     .cards--conteiner {
         margin-top: 2.5rem;
+    }
+    .btn__menu {
+        margin-left: 6rem
+    }
+    .btn__menu.change {
+        margin-left: 4rem;
     }
 }
